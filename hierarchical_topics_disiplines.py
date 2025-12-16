@@ -8,12 +8,14 @@ CSV-Format (mit $$ als Separator):
 title$$abstract$$year$$source$$keyword$$class_name$$middle_group$$subject_area
 """
 
+import argparse
 import os
 import re
 from pathlib import Path
 
 import numpy as np
 import pandas as pd
+import yaml
 
 from bertopic import BERTopic
 from bertopic.representation import KeyBERTInspired
@@ -38,6 +40,45 @@ RANDOM_STATE = 42
 
 # Untergrenze, ab wann sich Topic Modeling für ein Cluster überhaupt lohnt
 MIN_DOCS_FOR_CLUSTER = 10
+
+DEFAULT_CONFIG = {
+    "data_path": DATA_PATH,
+    "output_base_dir": OUTPUT_BASE_DIR,
+    "embedding_model": EMBEDDING_MODEL,
+    "min_cluster_size": MIN_CLUSTER_SIZE,
+    "n_components": N_COMPONENTS,
+    "n_neighbors": N_NEIGHBORS,
+    "random_state": RANDOM_STATE,
+    "min_docs_for_cluster": MIN_DOCS_FOR_CLUSTER,
+}
+
+
+def load_yaml_config(config_path: str) -> dict:
+    """Lädt YAML-Konfiguration und stellt sicher, dass ein Mapping vorliegt."""
+    with open(config_path, "r", encoding="utf-8") as f:
+        data = yaml.safe_load(f) or {}
+
+    if not isinstance(data, dict):
+        raise ValueError("Konfigurationsdatei muss ein YAML-Mapping enthalten.")
+
+    return data
+
+
+def apply_config_overrides(config: dict):
+    """Wendet Konfigurationswerte auf die Modul-Globals an."""
+    global DATA_PATH, OUTPUT_BASE_DIR, EMBEDDING_MODEL
+    global MIN_CLUSTER_SIZE, N_COMPONENTS, N_NEIGHBORS, RANDOM_STATE
+    global MIN_DOCS_FOR_CLUSTER
+
+    DATA_PATH = config.get("data_path", DATA_PATH)
+    OUTPUT_BASE_DIR = config.get("output_base_dir", OUTPUT_BASE_DIR)
+    EMBEDDING_MODEL = config.get("embedding_model", EMBEDDING_MODEL)
+
+    MIN_CLUSTER_SIZE = int(config.get("min_cluster_size", MIN_CLUSTER_SIZE))
+    N_COMPONENTS = int(config.get("n_components", N_COMPONENTS))
+    N_NEIGHBORS = int(config.get("n_neighbors", N_NEIGHBORS))
+    RANDOM_STATE = int(config.get("random_state", RANDOM_STATE))
+    MIN_DOCS_FOR_CLUSTER = int(config.get("min_docs_for_cluster", MIN_DOCS_FOR_CLUSTER))
 
 
 # ---------------------------------------------------------------------
@@ -188,6 +229,22 @@ def build_vectorizer(stopwords, n_docs: int) -> CountVectorizer:
         max_df=0.95,
     )
     return vectorizer
+
+
+def parse_args():
+    parser = argparse.ArgumentParser(
+        description="Führt die BERTopic-Pipeline nach Disziplin-Clustern aus."
+    )
+    parser.add_argument(
+        "-c",
+        "--config",
+        help=(
+            "Pfad zu einer YAML-Konfigurationsdatei, die Standardwerte wie "
+            "data_path oder embedding_model überschreibt. Beispiel: "
+            "config.example.yaml"
+        ),
+    )
+    return parser.parse_args()
 
 
 def run_bertopic_for_cluster(df_cluster: pd.DataFrame, cluster_label: str):
@@ -421,6 +478,20 @@ def run_bertopic_for_cluster(df_cluster: pd.DataFrame, cluster_label: str):
 # HAUPTFUNKTION
 # ---------------------------------------------------------------------
 def main():
+    args = parse_args()
+    config = DEFAULT_CONFIG.copy()
+
+    if args.config:
+        yaml_config = load_yaml_config(args.config)
+        config.update(yaml_config)
+        print(f"YAML-Konfiguration geladen aus: {args.config}")
+
+    apply_config_overrides(config)
+
+    print("Aktive Konfiguration:")
+    for key, value in config.items():
+        print(f"  {key}: {value}")
+
     # 1) Daten laden
     if not os.path.exists(DATA_PATH):
         raise FileNotFoundError(f"CSV nicht gefunden: {DATA_PATH}")
