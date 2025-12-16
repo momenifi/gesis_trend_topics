@@ -1,0 +1,28 @@
+Parent_ID,Parent_Name,Topics,Child_Left_ID,Child_Left_Name,Child_Right_ID,Child_Right_Name,Distance
+54,panel_media_attitudes_search_germany,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27]",51,web_sampling_mixed mode_open ended_inequality,53,german_web_national_attitudes_party,1.3053646669020613
+53,german_web_national_attitudes_party,"[0, 1, 2, 3, 4, 5, 6, 7, 9, 10, 11, 12, 13, 14, 15, 17, 18, 19, 21, 22, 24, 25]",49,web_text_machine learning_scientific_sharing,52,media_german_attitudes_skills_election,1.2436234094043084
+52,media_german_attitudes_skills_election,"[0, 1, 4, 5, 7, 10, 11, 12, 13, 14, 17, 19, 21, 24]",50,media_germany_differences_election_trust,40,growth_personality_educational_inequalities_matching,1.129348162439502
+51,web_sampling_mixed mode_open ended_inequality,"[8, 16, 20, 23, 26, 27]",46,sampling_mixed mode_inequality_waves_german,41,reliability_cognitive_political_closed_search engines,0.9714240356122898
+50,media_germany_differences_election_trust,"[0, 1, 4, 5, 7, 10, 12, 13, 14, 21, 24]",48,national_attitudes_social media_germany_voters,37,attitudes_cohort_welfare_german_lower,0.9696058039064468
+49,web_text_machine learning_scientific_sharing,"[2, 3, 6, 9, 15, 18, 22, 25]",47,privacy_llms_gender_natural language_errors,42,web_machine learning_sharing_text_performance,0.9587179767262004
+48,national_attitudes_social media_germany_voters,"[0, 4, 10, 13, 14, 21, 24]",45,party_national_attitudes_social media_voters,36,transformation_german_election_processes_level,0.8712862053381161
+47,privacy_llms_gender_natural language_errors,"[6, 22, 25]",22,speech_detection_robustness_sheds light_discrimination,43,privacy_llms_natural language_facets_version,0.8665605472672194
+46,sampling_mixed mode_inequality_waves_german,"[8, 16, 23, 27]",23,sampling_costs_germany_modes_age,38,panel_recruitment_probability based_differences_mail,0.856595518086096
+45,party_national_attitudes_social media_voters,"[0, 4, 13, 21, 24]",44,coverage_attitudes_social media_election_germany,24,immigration_media_voting_right wing_individual level,0.8362380897773671
+44,coverage_attitudes_social media_election_germany,"[0, 4, 13, 21]",21,attitudes_variance_multilevel_german_democracies,34,social media_election_trust_exposure_actors,0.8149354173722846
+43,privacy_llms_natural language_facets_version,"[6, 25]",6,privacy_errors_natural language_facets_machine,25,framework_language models llms_ideological_linking_testing,0.8137468707602719
+42,web_machine learning_sharing_text_performance,"[2, 3, 9, 15, 18]",39,computational_detection_texts_machine learning_performance,31,sharing_willingness_social science_machine learning_web browsing,0.8106531915269815
+41,reliability_cognitive_political_closed_search engines,"[20, 26]",26,open ended_version_interviews_nonresponse_citizenship,20,reliability_political_engines_search engines_health,0.7963892071235268
+40,growth_personality_educational_inequalities_matching,"[11, 17, 19]",30,personality_educational_inequalities_track_matching,17,growth_scale_validity_diversity_adolescents,0.7883365055057748
+39,computational_detection_texts_machine learning_performance,"[3, 15, 18]",18,publication_governance_types_domain_access,32,detection_machine learning_text_performance_social media,0.7881052422531659
+38,panel_recruitment_probability based_differences_mail,"[8, 16, 27]",29,panel_waves_probability based_search_response behavior,27,recruitment_panel_mail_effectiveness_sheds light,0.7796957889582617
+37,attitudes_cohort_welfare_german_lower,"[1, 5, 7, 12]",35,welfare_energy_german_age_migration,33,attitudes_cohort_citizen_sharing_crisis,0.7417446127902724
+36,transformation_german_election_processes_level,"[10, 14]",10,europe_time_elections_measurement invariance_validated,14,german_processes_changes_political attitudes_scholars,0.7250284185363205
+35,welfare_energy_german_age_migration,"[5, 7]",5,gender_german_beliefs_cohort_migrants,7,welfare_energy_european_migration_individual level,0.7029016676851272
+34,social media_election_trust_exposure_actors,"[0, 4, 13]",28,voters_climate_germany_trust_traits,0,social media_exposure_trust_periods_politics,0.6725366043865902
+33,attitudes_cohort_citizen_sharing_crisis,"[1, 12]",12,trust_attitudes_levels_citizens_crisis,1,cohort_profiles_web_children_germany,0.6258123815108825
+32,detection_machine learning_text_performance_social media,"[3, 15]",3,detection_text_performance_machine learning_social media,15,network_identification_model_coding_components,0.6015285994693014
+31,sharing_willingness_social science_machine learning_web browsing,"[2, 9]",2,willingness_machine learning_high_social science_browsing,9,digital trace_open science_types_social sciences_facebook,0.5867993055012749
+30,personality_educational_inequalities_track_matching,"[11, 19]",19,adolescents_inequalities_emotional_employment_migration,11,students_personality_success_environment_interests,0.5760584141471623
+29,panel_waves_probability based_search_response behavior,"[8, 16]",8,waves_differences_response behavior_questionnaire_general population,16,participation_google_linkage_probability based_german,0.5683194034384962
+28,voters_climate_germany_trust_traits,"[4, 13]",4,climate_voters_traits_ideology_germany,13,negative_search engines_engines_voters_attitudes,0.5549202976491691

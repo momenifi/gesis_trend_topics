@@ -1,0 +1,10 @@
+Parent_ID,Parent_Name,Topics,Child_Left_ID,Child_Left_Name,Child_Right_ID,Child_Right_Name,Distance
+18,graph_performance_network_tasks_framework,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9]",16,online_topics_access_artificial intelligence_framework,17,graph_network_training_semantic_accuracy,0.9734192745686029
+17,graph_network_training_semantic_accuracy,"[0, 2, 3, 5, 8]",15,impact_domain_performance_tasks_semantic,11,graph_state art_performance_types_space,0.795348116745853
+16,online_topics_access_artificial intelligence_framework,"[1, 4, 6, 7, 9]",14,access_publications_extraction_reproducibility_framework,10,work_users_artificial intelligence_presents_domains,0.7871864645239848
+15,impact_domain_performance_tasks_semantic,"[0, 2, 8]",2,reproducibility_framework_domain_level_recent years,13,language_training_impact_accuracy_domain,0.7527859426211868
+14,access_publications_extraction_reproducibility_framework,"[6, 7, 9]",9,search_reproducibility_topics_real world_score,12,access_publications_framework_artificial intelligence_search,0.7187325278378366
+13,language_training_impact_accuracy_domain,"[0, 8]",0,training_tasks_domain_accuracy_context,8,impact_corpus_training_introduces_accuracy,0.5713423774985152
+12,access_publications_framework_artificial intelligence_search,"[6, 7]",6,access_topics_search_artificial intelligence_evidence,7,publications_framework_access_extraction_real world,0.5671138352156065
+11,graph_state art_performance_types_space,"[3, 5]",5,relationships_performance_extraction_state art_graph,3,graph_network_state_best_design,0.5309171608014635
+10,work_users_artificial intelligence_presents_domains,"[1, 4]",4,domains_community_artificial intelligence_impact_framework,1,online_training_topics_time_artificial intelligence,0.4793180388146513
