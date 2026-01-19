@@ -1,0 +1,7 @@
+bertopic
+pandas
+numpy
+umap-learn
+hdbscan
+pyyaml
+scikit-learn

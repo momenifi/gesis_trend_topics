@@ -1,2 +1,3 @@
 Parent_ID,Parent_Name,Topics,Child_Left_ID,Child_Left_Name,Child_Right_ID,Child_Right_Name,Distance
-2,german_age_participation_prescreening_belief,"[0, 1]",0,life_uncertainty_germany_prevalence_job insecurity,1,snot 22_neck_statistical evidence_cup_postoperative,0.8906569592478897
+4,life_prevalence_test_germany_registration,"[0, 1, 2]",1,test_registration_correlated_early_groups,3,prevalence_germany_model_political_satisfaction,0.8320505401653668
+3,prevalence_germany_model_political_satisfaction,"[0, 2]",2,prevalence_life_germany_recruitment_improve,0,political_framework_germany_measure_willingness,0.6049755015476317

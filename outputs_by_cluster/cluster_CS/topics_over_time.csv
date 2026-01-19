@@ -1,31 +1,27 @@
 Topic,Words,Frequency,Timestamp
--1,"detection, knowledge, key, domains, framework",7,2023
-0,"training, using, generate, domain, impact",23,2023
-1,"training, online, increasing, artificial intelligence, context",6,2023
-2,"recent years, resource, reproducibility, compared, scale",10,2023
-3,"graph, user, state art, space, performance",17,2023
-5,"types, extraction, named entity recognition, academic, role",3,2023
-6,"access, artificial intelligence, extraction, topics, evidence",9,2023
-7,"publications, framework, high, transparency, generate",6,2023
-8,"long, author, future, quality, addition",4,2023
-9,"relationships, quality, digital, reproducibility, challenges",1,2023
--1,"task, entity recognition, outperforms, f1, evidence",13,2024
-0,"tasks, impact, accuracy, domain, future",24,2024
-1,"domain, topics, automated, training, search",15,2024
-2,"reproducibility, domain, sources, levels, framework",10,2024
-4,"domains, community, artificial intelligence, impact, framework",15,2024
-5,"extraction, state art, graph, characteristics, key",13,2024
-6,"topics, search, applications, evidence, automatically",4,2024
-7,"papers, innovative, framework, role, named entity recognition",3,2024
-8,"corpus, impact, accuracy, recommendations, author",5,2024
-9,"topics, detecting, real world, access, reproducibility",7,2024
--1,"highlight, supervised, types, accuracy, domain",1,2025
+-1,"presents, detect, tasks, online, named entity recognition",1,2023
+0,"language, training, domain, impact, accuracy",23,2023
+1,"training, claims, online, increasing, context",6,2023
+2,"scientific, publications, extraction, intelligence, importance",16,2023
+3,"recent years, resource, relationships, compared, scale",10,2023
+4,"graph, user, state art, space, performance",17,2023
+5,"detection, knowledge, field, high, relationships",6,2023
+6,"types, named entity recognition, academic, corpus, role",3,2023
+8,"long, power, improve, role, publications",4,2023
+-1,"task, named entity recognition, f1, evidence, community",10,2024
+0,"language, tasks, impact, accuracy, future",24,2024
+1,"users, topics, dynamic, training, search",15,2024
+2,"topics, extraction, open, language, evidence",7,2024
+3,"domain, level, compared, sources, role",10,2024
+5,"search, quality, semantic, experiments, real world",10,2024
+6,"extraction, state art, graph, author, characteristics",13,2024
+7,"online, topics, applications, impact, employed",15,2024
+8,"corpus, impact, accuracy, recommendations, time",5,2024
+-1,"highlight, evaluation, organizations, users, author",2,2025
 0,"domain, accuracy, training, patterns, real world",15,2025
-1,"online, levels, evidence, focus, training",7,2025
-2,"network, relevant, framework, reproducibility, domains",4,2025
-3,"graph, better, search, recent years, network",4,2025
-4,"transparency, highlight, users, domains, artificial intelligence",1,2025
-6,"access, long, topics, search, artificial intelligence",2,2025
-7,"network, access, serve, relevant, patterns",2,2025
-8,"analyze, time, performance, corpus, training",2,2025
-9,"reproducibility, conclude, search, quality, real world",3,2025
+1,"online, power, time, focus, training",7,2025
+2,"extraction, network, topics, long, offer",4,2025
+3,"network, insights, future, presents, increasing",4,2025
+4,"graph, better, search, recent years, network",4,2025
+5,"improve, user, search, field, key",3,2025
+8,"analyze, offer, time, corpus, training",2,2025

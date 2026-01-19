@@ -1,0 +1,43 @@
+Parent_ID,Parent_Name,Topics,Child_Left_ID,Child_Left_Name,Child_Right_ID,Child_Right_Name,Distance
+84,social_german_text_performance_differences,"[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42]",77,performance_machine learning_checking_workshop_language models,83,panel_german_media_attitudes_search,1.4728976680697998
+83,panel_german_media_attitudes_search,"[0, 1, 2, 4, 5, 7, 9, 10, 11, 13, 14, 15, 16, 17, 19, 20, 21, 22, 23, 24, 25, 26, 28, 29, 30, 33, 34, 35, 36, 38, 39, 40, 42]",81,panel_open ended_mixed mode_population_effects,82,media_party_germany_differences_search,1.296062026267862
+82,media_party_germany_differences_search,"[0, 1, 2, 5, 7, 9, 11, 13, 14, 15, 17, 19, 20, 21, 22, 23, 24, 25, 26, 28, 29, 35, 36, 40, 42]",80,social_using_german_differences_high,68,attitudes_electoral_germany_immigration_right wing,1.2298652104084067
+81,panel_open ended_mixed mode_population_effects,"[4, 10, 16, 30, 33, 34, 38, 39]",76,open ended_version_german language_questionnaire_labels,72,panel_mixed mode_network_sampling_inequality,1.1112218221538808
+80,social_using_german_differences_high,"[1, 2, 5, 7, 9, 11, 13, 14, 15, 17, 19, 21, 23, 24, 25, 26, 28, 35, 40, 42]",79,students_differences_health_job_germany,69,political_exposure_browsing_social media_domain,1.0839026449168154
+79,students_differences_health_job_germany,"[2, 9, 11, 13, 14, 15, 21, 23, 24, 26, 28, 35, 40, 42]",75,countries_health_differences_personality_educational,78,gender_privacy_beliefs_model fit_factor,1.0254130303518247
+78,gender_privacy_beliefs_model fit_factor,"[14, 15, 23, 24, 28, 35, 40]",70,model fit_evidence_characteristics_scenarios_domains,74,gender_privacy_family_beliefs_contextual,1.0043512423580068
+77,performance_machine learning_checking_workshop_language models,"[3, 6, 8, 12, 18, 27, 31, 32, 37, 41]",58,workshop_natural language processing_retrieval_transparency_citation,73,detection_performance_text_machine learning_language models,0.9561200093772029
+76,open ended_version_german language_questionnaire_labels,"[33, 34, 38]",33,integrating_errors_questionnaire_versions_language,44,open ended_web_labels_nonresponse_coding,0.9495654062265154
+75,countries_health_differences_personality_educational,"[2, 9, 11, 13, 21, 26, 42]",71,european_differences_welfare_energy_profiles,60,personality_adolescents_literacy_assessment_inequalities,0.9464710149048364
+74,gender_privacy_family_beliefs_contextual,"[23, 24, 28, 40]",67,gender_beliefs_contextual_german_employment,40,privacy_mass_digital_inequalities_training,0.9401624266069962
+73,detection_performance_text_machine learning_language models,"[3, 6, 8, 12, 18, 27, 37, 41]",55,arguments_multilingual_matching_llms_aware,65,performance_machine learning_language models_fact checking_texts,0.9240316252120238
+72,panel_mixed mode_network_sampling_inequality,"[4, 10, 16, 30, 39]",62,incentives_waves_probability based_differences_mail,61,mixed mode_design_network_sampling_graphs,0.9004022689885669
+71,european_differences_welfare_energy_profiles,"[2, 9, 13, 42]",42,federal_migrants_reliability_tracking_age,53,european_welfare_attitudes_lower_energy,0.8915767035474967
+70,model fit_evidence_characteristics_scenarios_domains,"[14, 15, 35]",15,profile_domains_extend_heterogeneous_hypothesis,66,model fit_test_magnitude_primary_distributions,0.8773101155437792
+69,political_exposure_browsing_social media_domain,"[1, 5, 7, 17, 19, 25]",54,domain_frameworks_users_social science_digital trace,64,political_exposure_social media_google_reliability,0.876943096236614
+68,attitudes_electoral_germany_immigration_right wing,"[0, 20, 22, 29, 36]",63,electoral_attitudes_immigration_germany_right wing,22,variables_attitudes_german_regional_democracies,0.8753802543736606
+67,gender_beliefs_contextual_german_employment,"[23, 24, 28]",57,women_germany_multilevel_employment_market,24,bias_gender_speech_detection_sheds light,0.8613359649730827
+66,model fit_test_magnitude_primary_distributions,"[14, 35]",14,primary_score_months_test_measurement invariance,35,model fit_magnitude_valid_distributions_correlation,0.8603418668157908
+65,performance_machine learning_language models_fact checking_texts,"[3, 6, 8, 12, 18, 27]",52,fact checking_online_topics_landscape_computational,59,machine learning_performance_language models_texts_fake,0.8459737154807201
+64,political_exposure_social media_google_reliability,"[1, 17, 19]",51,exposure_political_social media_annotation_trust,19,reliability_search engines_engines_disparities_health,0.8294660771102348
+63,electoral_attitudes_immigration_germany_right wing,"[0, 20, 29, 36]",29,immigration_media_voting_right wing_individual level,56,voters_attitudes_germany_climate_government,0.8285894663134208
+62,incentives_waves_probability based_differences_mail,"[10, 16, 39]",39,recruitment_panel_effectiveness_online access_fewer,46,participation_waves_bias_older_probability based,0.8083069999855079
+61,mixed mode_design_network_sampling_graphs,"[4, 30]",30,sampling_mixed mode_self administered_costs_germany,4,network_consistency_graphs_short term_framework,0.800757335935808
+60,personality_adolescents_literacy_assessment_inequalities,"[11, 21, 26]",45,personality_educational_track_inequalities_effects,26,psychometric_diversity_factorial_german language_age,0.7966240640689154
+59,machine learning_performance_language models_texts_fake,"[3, 6, 8, 18]",50,machine learning_language models_fake_errors_llms,18,content_moderation_machine learning_accuracy_platforms,0.7957784608892574
+58,workshop_natural language processing_retrieval_transparency_citation,"[31, 32]",32,workshop_retrieval_natural language processing_https_growing,31,transparency_citation_natural language processing_named entity recognition_preferences,0.7928869098750686
+57,women_germany_multilevel_employment_market,"[23, 28]",23,germany_younger_interplay_household_attitudes,28,gender_contextual_market_lead_employment,0.7762310266404674
+56,voters_attitudes_germany_climate_government,"[0, 20, 36]",36,electoral_multi level_united kingdom_italy_database,43,candidates_germany_climate_public opinion_traits,0.7637220835017441
+55,arguments_multilingual_matching_llms_aware,"[37, 41]",37,multilingual_socio cultural_retrieval_llms_comparison,41,arguments_quality_mining_llms_graph,0.7441667364993956
+54,domain_frameworks_users_social science_digital trace,"[5, 7, 25]",25,comparability_instruments_projects_german_ex ante,49,domain_digital trace_social science_reuse_machine learning,0.7370048428933494
+53,european_welfare_attitudes_lower_energy,"[2, 9, 13]",48,attitudes_cohort_web_gaps_government,9,energy_welfare_european_migration_labour,0.7142542634824676
+52,fact checking_online_topics_landscape_computational,"[12, 27]",12,fact checking_graphs_landscape_online_prediction,27,gender_performance_mining_debates_computer science,0.6925133339768712
+51,exposure_political_social media_annotation_trust,"[1, 17]",1,social media_parties_crisis_trust_inference,17,behavioral_digital_web browsing_reference_german,0.6913027108463667
+50,machine learning_language models_fake_errors_llms,"[3, 6, 8]",8,machine learning_index_authors_types_baseline,47,fake_training_errors_llms_large language models,0.6896787332995788
+49,domain_digital trace_social science_reuse_machine learning,"[5, 7]",5,digital trace_reuse_energy_domain_social sciences,7,frameworks_willingness_sharing_machine learning_social science,0.6587622532369111
+48,attitudes_cohort_web_gaps_government,"[2, 13]",13,government_trust_women_cognitive_diversity,2,cohort_web_profiles_children_emotional,0.6565869792996205
+47,fake_training_errors_llms_large language models,"[3, 6]",6,fake_coding_disciplines_validation_social media,3,errors_llms_retrieval_training_large language models,0.652378774965271
+46,participation_waves_bias_older_probability based,"[10, 16]",16,participation_google_engine_lower_probability based,10,waves_bias_differences_response behavior_questionnaire,0.612846367159562
+45,personality_educational_track_inequalities_effects,"[11, 21]",21,track_inequalities_educational_emotional_german,11,students_personality_success_matching_higher order,0.6038231197744113
+44,open ended_web_labels_nonresponse_coding,"[34, 38]",38,open ended_cognitive_interviews_version_nonresponse,34,classification_open ended_loss_german language_sensitive,0.5909255984741312
+43,candidates_germany_climate_public opinion_traits,"[0, 20]",0,voters_opinion_germany_climate_traits,20,campaigning_search engines_negative_attitudes_regions,0.5799528259181749

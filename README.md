@@ -1,10 +1,10 @@
 # GESIS Trend Topics
 
-This repository runs the BERTopic pipeline grouped by discipline clusters (SS, CS, BIO, OTHER).
+This repository runs the BERTopic pipeline grouped by discipline clusters (SS, CS, BIO, OTHER) and once over all disciplines combined.
 
 ## How to run
 
-1. Install Python dependencies (for example via `pip install -r requirements.txt` if you have one, or install `bertopic`, `pandas`, `numpy`, `umap-learn`, `hdbscan`, and `pyyaml`).
+1. Install Python dependencies (recommended via `pip install -r requirements.txt`; includes `bertopic`, `pandas`, `numpy`, `umap-learn`, `hdbscan`, `pyyaml`, and `scikit-learn`).
 2. Ensure your input CSV is available. By default the script looks for `abstracts.csv` in the repository root. The CSV must be separated by `$$` and contain the columns `title`, `abstract`, `year`, `source`, and `middle_group`.
 3. Run the pipeline:
    ```bash
@@ -15,7 +15,7 @@ This repository runs the BERTopic pipeline grouped by discipline clusters (SS, C
    python hierarchical_topics_disiplines.py --config config.example.yaml
    ```
 
-The outputs are written under `outputs_by_cluster/cluster_<LABEL>/` for each cluster.
+The outputs are written under `outputs_by_cluster/cluster_<LABEL>/` for each cluster. A combined run over all documents is stored in `outputs_by_cluster/cluster_ALL/`.
 
 ## Configuration
 

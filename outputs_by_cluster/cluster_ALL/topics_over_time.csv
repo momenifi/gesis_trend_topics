@@ -1,0 +1,120 @@
+Topic,Words,Frequency,Timestamp
+-1,"similarity, access, family, german, sampling",55,2023
+0,"election, perceptions, personality traits, germany, performance",29,2023
+1,"facebook, media, groups, debate, pre registered",10,2023
+2,"children, immigration, 2020, prevalence, testing",11,2023
+3,"llms, training, large language models, algorithms, retrieval",21,2023
+4,"graph, network, consistency, short term, mixed mode",24,2023
+5,"publication, sharing, infrastructure, domain, wide range",10,2023
+6,"fake, news, prove, f1 score, implementation",6,2023
+7,"sharing, machine learning, high, qualitative, frameworks",14,2023
+8,"entity, index, journals, machine learning, correlation",15,2023
+9,"migration, tweets, europe, energy, welfare",8,2023
+10,"panel, waves, response behavior, variables, general population",11,2023
+11,"scores, states, traits, engagement, psychometric",7,2023
+12,"topic, graphs, fact checking, prediction, adopting",17,2023
+13,"heterogeneity, different levels, contrast, europe, communities",4,2023
+14,"outcome, measurement invariance, associations, designs, months",11,2023
+15,"hypothesis, extend, setting, filter, cross national",11,2023
+16,"participation, google, engine, probability based, german",10,2023
+17,"behaviors, web browsing, association, stability, large scale",4,2023
+18,"machine learning, accuracy, coding, moderation, errors",9,2023
+19,"political, search, german internet panel, response behavior, probability based",5,2023
+20,"trust, voters, positive effect, complexity, respective",1,2023
+21,"income, educational, inequalities, migration, german",12,2023
+23,"women, migration, preferences, german, labour market",2,2023
+24,"bias, speech, detection, timely, sheds light",7,2023
+25,"difference, comparability, projects, ex ante, authors",10,2023
+26,"invariance, uk, german language, 2020, personality",6,2023
+27,"tasks, artificial intelligence, discourse, communities, field",2,2023
+29,"right wing, parties, ethnic, capture, methodological",3,2023
+30,"sampling, self administered, germany, mixed mode, concurrent",8,2023
+32,"retrieval, https, natural language processing, communities, practitioners",5,2023
+33,"translation, errors, questionnaire, starting point, significant differences",5,2023
+34,"labels, open ended, german language, coding, indicators",6,2023
+35,"distributions, tests, model fit, shift, degrees",2,2023
+36,"parliamentary, party, level, integrated, cross national",1,2023
+37,"multilingual, metrics, similarity, using, synthetic",5,2023
+38,"cognitive, open ended, versions, tested, nonresponse",5,2023
+39,"incentives, mail, demographic, tested, german internet panel",11,2023
+40,"privacy, mass, digital, inequalities, training",11,2023
+42,"differences, questionnaire, age, reliability, orientation",2,2023
+-1,"growth, interviewer, differences, networks, germany",67,2024
+0,"electoral, germany, preferences, stronger, association",13,2024
+1,"political, coverage, social media, inference, misinformation",38,2024
+2,"web, wave, tracking, germany, questionnaire",31,2024
+3,"stability, retrieval, llms, training, large language models",16,2024
+4,"framework, similarities, networks, error, population",15,2024
+5,"energy, digital trace, sharing, social sciences, web browsing",18,2024
+6,"fake, coding, validation, parliamentary, social media",24,2024
+7,"frameworks, willingness, users, social science, domain",15,2024
+8,"machine learning, performance, frame, corpus, governance",19,2024
+9,"employment, welfare, regional, individual level, energy",19,2024
+10,"panel, bias, differences, questionnaire, career",17,2024
+11,"engagement, personality, values, higher order, learning",18,2024
+12,"fact checking, biases, landscape, graphs, domain",7,2024
+13,"trust, women, diversity, political, underrepresented",18,2024
+14,"strength, popular, short term, analysed, losses",4,2024
+15,"profiles, belief, heterogeneous, populations, generate",7,2024
+16,"waves, acceptance, age, positive effect, gesis panel",2,2024
+17,"behavioral, web browsing, little attention, million, scientists",8,2024
+18,"different levels, interventions, annotated, losses, machine learning",8,2024
+19,"reliability, search engines, engines, disparities, health",12,2024
+20,"search engines, engines, attitudes, regions, election",15,2024
+21,"literacy, women, occupational, inequalities, german",2,2024
+22,"democracy, differences, dimensions, germany, driving",13,2024
+23,"family, germany, interplay, sociodemographic, orientation",14,2024
+24,"gender, targets, binary, detecting, quality",7,2024
+25,"comparability, variable, german, trust, collaboration",4,2024
+26,"invariance, psychometric, factorial, constructs, countries",6,2024
+27,"online, detection, tasks, debates, models",8,2024
+28,"gender, contextual, market, organizations, labor",11,2024
+29,"national, voting, multi level, salience, predicts",5,2024
+30,"mixed mode, costs, sampling, self administered, age",6,2024
+31,"transparency, citation, natural language processing, user, named entity recognition",13,2024
+32,"workshop, retrieval, natural language processing, communities, https",6,2024
+33,"machine, comparability, versions, questionnaires, german language",8,2024
+34,"indicators, quality, open ended, format, loss",5,2024
+35,"model fit, correlation, number, settings, forward",5,2024
+36,"database, elections, qualitative, 2019, interviews",4,2024
+37,"arguments, socio cultural, multilingual, retrieval, llms",5,2024
+38,"open ended, time, citizenship, sound, nonresponse",5,2024
+41,"arguments, quality, mining, llms, graph",11,2024
+42,"federal, migrants, prevalence, willingness, younger",3,2024
+-1,"similarity, benchmark, neural, german, age",48,2025
+0,"climate, attitudes, governance, performance, electoral",19,2025
+1,"social media, politics, waves, driver, frame",11,2025
+2,"cohort, countries, job, emotional, older",13,2025
+3,"errors, language models, higher order, exploiting, writing",9,2025
+4,"optimization, register, graphs, recent years, tested",4,2025
+5,"sharing, publications, digital trace, barriers, ethical",12,2025
+6,"little attention, paid, outlook, transparency, aspect",7,2025
+7,"domain, preference, learning, exploiting, outperforms",5,2025
+9,"european union, literacy, vignette experiment, benefits, multilevel",5,2025
+10,"settings, fake, effect, selection, proportion",3,2025
+11,"integration, students, associations, predictive, personality traits",4,2025
+12,"traditional, matching, fact checking, score, application",3,2025
+13,"government, opposition, lower, responsiveness, randomly assigned",4,2025
+14,"primary, factors, age, time, regression",9,2025
+15,"forward, close, tool, presents, traits",6,2025
+16,"older, lower, participation, drive, increases",10,2025
+17,"responses, web, actors, german, llms",9,2025
+18,"interventions, interactions, testing, online, stakeholders",3,2025
+19,"politicians, search engines, predictive, sociodemographic, highlighting",2,2025
+20,"campaigning, driver, personality, search engines, benefit",3,2025
+21,"inequalities, track, emotional, educational, differences",5,2025
+22,"democracy, multilevel, likelihood, responsiveness, german",5,2025
+23,"private, attitudes, women, hypothesized, questionnaires",1,2025
+24,"staff, minority, integrate, empirical evidence, remain",3,2025
+25,"analytical, consequences, starting point, yield, smaller",2,2025
+26,"artificial intelligence, thinking, context, rise, opportunities",3,2025
+27,"age, topics, selection, computer science, social media",5,2025
+28,"contextual, determinants, organizations, micro, multilevel",4,2025
+29,"immigration, campaign, right wing, individual level, news articles",6,2025
+32,"workshop, retrieval, natural language processing, communities, current state",2,2025
+34,"nonresponse, questionnaire, versions, open ended, loss",2,2025
+35,"model fit, valid, settings, sensitive, index",5,2025
+36,"elections, multi level, united kingdom, italy, scientists",7,2025
+37,"multilingual, tweets, metrics, networks, verify",2,2025
+38,"open ended, randomized, higher levels, questionnaire, presents",2,2025
+42,"reliability, cross cultural, federal, measurement invariance, age",5,2025

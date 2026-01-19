@@ -528,6 +528,10 @@ def main():
         df_cluster = df[df["cluster"] == cluster_label]
         run_bertopic_for_cluster(df_cluster, cluster_label)
 
+    # 4) Zusätzlich Topic Modeling über alle Disziplinen gemeinsam
+    print("\n[4/3] Starte BERTopic über alle Disziplinen ...")
+    run_bertopic_for_cluster(df, "ALL")
+
 
 if __name__ == "__main__":
     main()

@@ -1,4 +1,5 @@
 Topic,Count,Name,CustomName,CustomLabel
--1,7,-1_prevalence_east west_hpv16_vaccine,"prevalence, east west, hpv16, vaccine, new federal","prevalence, east west, hpv16, vaccine, new federal"
-0,35,0_life_uncertainty_germany_prevalence,"life, uncertainty, germany, prevalence, job insecurity","life, uncertainty, germany, prevalence, job insecurity"
-1,13,1_snot 22_neck_statistical evidence_cup,"snot 22, neck, statistical evidence, cup, postoperative","snot 22, neck, statistical evidence, cup, postoperative"
+-1,15,-1_women_prevalence_germany_social media,"women, prevalence, germany, social media, selection","women, prevalence, germany, social media, selection"
+0,19,0_political_framework_germany_measure,"political, framework, germany, measure, willingness","political, framework, germany, measure, willingness"
+1,11,1_test_registration_correlated_early,"test, registration, correlated, early, groups","test, registration, correlated, early, groups"
+2,10,2_prevalence_life_germany_recruitment,"prevalence, life, germany, recruitment, improve","prevalence, life, germany, recruitment, improve"
