@@ -72,9 +72,9 @@ This approach ties labels directly to real publications, which makes them more t
 
 ## Outputs Produced
 For each discipline cluster (e.g., `outputs_by_cluster/cluster_SS/`):
-- `topic_info.csv` contains one row per topic with counts, key terms, and any labels.
 - `topic_info_raw.csv` contains the raw topic terms before any labeling.
-- `topic_info_labeled.csv` contains the LLM labels (`LLM_Label`, `LLM_Labels`) for each topic.
+- `topic_info.csv` contains BERTopic’s own automatic labels. These appear in `Name`, `CustomName`, and `CustomLabel` (often identical because they come from the same BERTopic label generation step).
+- `topic_info_labeled.csv` adds LLM-generated labels in `LLM_Label` (first label) and `LLM_Labels` (all labels). The BERTopic label columns are still present there, so the file has both sources side by side.
 - `topics_over_time.csv` contains topic frequencies by year.
 - `topics_over_time_labeled.csv` is the same as above, but with LLM labels added.
 - `publications_with_topics.csv` and `publications_with_topics.xlsx` list each publication with its assigned topic, label, and probability score.
