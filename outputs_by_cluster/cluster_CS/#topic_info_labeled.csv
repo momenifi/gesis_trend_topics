@@ -1,12 +1,9 @@
 Topic,Count,Name,CustomName,CustomLabel,LLM_Label
--1,21,-1_detection_task_key_framework,"detection, task, key, framework, online","detection, task, key, framework, online",
-0,62,0_training_tasks_domain_accuracy,"training, tasks, domain, accuracy, context","training, tasks, domain, accuracy, context",Task-Specific Training Accuracy Models
-1,28,1_online_training_topics_time,"online, training, topics, time, artificial intelligence","online, training, topics, time, artificial intelligence",Time-Sensitive Topic Modeling with AI
-2,24,2_reproducibility_framework_domain_level,"reproducibility, framework, domain, level, recent years","reproducibility, framework, domain, level, recent years",Reproducibility in NLP Frameworks
-3,21,3_graph_network_state_best,"graph, network, state, best, design","graph, network, state, best, design",Graph-Based State Transition Design
-4,16,4_domains_community_artificial intelligence_impact,"domains, community, artificial intelligence, impact, framework","domains, community, artificial intelligence, impact, framework",AI Community Impact Frameworks
-5,16,5_relationships_performance_extraction_state art,"relationships, performance, extraction, state art, graph","relationships, performance, extraction, state art, graph",Graph-Based Relationship Extraction
-6,15,6_access_topics_search_artificial intelligence,"access, topics, search, artificial intelligence, evidence","access, topics, search, artificial intelligence, evidence",AI Search Evidence Access
-7,11,7_publications_framework_access_extraction,"publications, framework, access, extraction, real world","publications, framework, access, extraction, real world",Real-World Data Extraction Frameworks
-8,11,8_impact_corpus_training_introduces,"impact, corpus, training, introduces, accuracy","impact, corpus, training, introduces, accuracy",Corpus Training Impact Assessment
-9,11,9_search_reproducibility_topics_real world,"search, reproducibility, topics, real world, score","search, reproducibility, topics, real world, score",Reproducibility of Search Results
+-1,87,-1_retrieval_graph_tasks_artificial intelligence,"retrieval, graph, tasks, artificial intelligence, llms","retrieval, graph, tasks, artificial intelligence, llms",
+0,40,0_tasks_community_impact_retrieval,"tasks, community, impact, retrieval, social media","tasks, community, impact, retrieval, social media",Social Media Impact Assessment
+1,37,1_detection_knowledge graphs_domain_social media,"detection, knowledge graphs, domain, social media, pipeline","detection, knowledge graphs, domain, social media, pipeline",Social Media Domain Detection
+2,20,2_vocabulary_accuracy_automated_training,"vocabulary, accuracy, automated, training, llms","vocabulary, accuracy, automated, training, llms",Language Model Evaluation
+3,19,3_domain_dependency_state art_words,"domain, dependency, state art, words, graphs","domain, dependency, state art, words, graphs",Graph-Based Dependency Parsing
+4,18,4_retrieval_impact_trained_context,"retrieval, impact, trained, context, large language llms","retrieval, impact, trained, context, large language llms",Large Language Model Retrieval
+5,16,5_training_f1 score_large language_llms,"training, f1 score, large language, llms, retrieval","training, f1 score, large language, llms, retrieval",Large Language Model Retrieval
+6,13,6_impact_reference_sentence_account,"impact, reference, sentence, account, community","impact, reference, sentence, account, community",Impact of Scientific References

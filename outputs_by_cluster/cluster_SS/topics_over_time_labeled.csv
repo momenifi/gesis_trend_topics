@@ -1,0 +1,88 @@
+Topic,Words,Frequency,Timestamp,LLM_Label
+-1,"mobile, political, children, european, attitudes",15,2023,
+0,"election, germany, migration, differences, age",50,2023,German Migration Patterns
+1,"machine learning, accuracy, access, text, language models",16,2023,Machine Learning Errors
+2,"cases, reliability, behaviors, tracking, web browsing",12,2023,Facebook Reliability Concerns
+3,"party, trust, populist, personality traits, voting behavior",10,2023,German Political Perception
+4,"media, candidate, negative, refugee, polarization",7,2023,Polarization and Misinformation
+5,"privacy, journalism, learning, groups, robustness",21,2023,Media Trust Research
+6,"nonresponse, waves, machine learning, population, mixed mode panel",15,2023,Panel Nonresponse Prediction
+7,"sampling, mixed mode, germany, difference, addresses",12,2023,Mixed Mode Survey Design
+8,"recruitment, online panel, probability based, mixed mode, quality",23,2023,Online Panel Recruitment
+9,"types, authors, web, correlation, machine learning",7,2023,Government Metadata Channels
+10,"framing, search engines, covid 19 pandemic, beliefs, significant differences",3,2023,COVID-19 Trust Research
+11,"reduction, sampling, big, correlation, personality traits",13,2023,Survey Data Harmonization
+12,"work, digital, inclusion, measurement invariance, social science",9,2023,Digital Data Quality
+14,"option, assessment, competing, hypotheses, cross cultural",2,2023,Argument Quality Assessment
+15,"classification, closed, web, german language, interviewing",7,2023,Open-ended probing
+16,"public opinion, hypothesis, process, policymakers, forms",6,2023,Public Opinion Research
+17,"split, questionnaire, errors, comparability, languages",7,2023,Questionnaire Translation Methods
+18,"political, scores, german internet panel, uses, large scale",6,2023,Political Knowledge Measurement
+19,"processes, map, germany, past, heterogeneous",2,2023,German Unification Processes
+20,"open science, training, institutions, social media, yield",4,2023,Open Science Training
+22,"large scale, salience, parties, right wing, cross cultural",3,2023,National Identity Formation
+23,"european, levels, heterogeneity, communities, comparisons",4,2023,European Welfare Attitudes
+24,"political science, open science, 2021, german federal election, engines",2,2023,Search Engine Performance Metrics
+25,"children, risk, immigration, 19 pandemic, europe",6,2023,Children at Risk
+27,"complexity, machine learning, relationships, framework, network",2,2023,Family Network Similarity
+28,"cognitive, pretesting, version, interviews, algorithms",3,2023,Survey Question Pretesting
+-1,"political, networks, search, natural language, long term",34,2024,
+0,"german, engagement, differences, age, migration",65,2024,German Migration Patterns
+1,"large language models, domain, machine learning, llms, parliamentary",27,2024,Machine Learning Errors
+2,"facebook, web browsing, tracking, reliability, privacy",20,2024,Facebook Reliability Concerns
+3,"political, regional, germany, multilevel, preferences",14,2024,German Political Perception
+4,"privacy, journalism, hybrid, russian, election campaigns",13,2024,Polarization and Misinformation
+5,"media, trust, learning, western, right wing",12,2024,Media Trust Research
+6,"probability based, nonresponse, waves, gesis panel, different levels",8,2024,Panel Nonresponse Prediction
+7,"mixed mode, face, web, sampling, wave",14,2024,Mixed Mode Survey Design
+8,"recruitment, affects, probability based, german internet panel, mixed mode",7,2024,Online Panel Recruitment
+9,"energy, pipeline, recognition, news articles, architecture",13,2024,Government Metadata Channels
+10,"covid 19 pandemic, trust, social science, key, assessment",14,2024,COVID-19 Trust Research
+11,"governance, comparability, projects, health, trust",5,2024,Survey Data Harmonization
+12,"social science, digital, linking, position, exposure",4,2024,Digital Data Quality
+13,"contextual, women, impact, diversity, europe",8,2024,Gender Inequality in Academia
+14,"arguments, mining, fine tuning, language model, llms",15,2024,Argument Quality Assessment
+15,"visual, pretesting, modes, questionnaire, closed",8,2024,Open-ended probing
+16,"privacy, campaigns, cross national, public opinion, negative",7,2024,Public Opinion Research
+17,"machine, split, questionnaire, errors, german language",9,2024,Questionnaire Translation Methods
+18,"political attitudes, tweets, web tracking, exposure, european union",7,2024,Political Knowledge Measurement
+19,"chapter, processes, germany, changes, political attitudes",12,2024,German Unification Processes
+20,"computational, open science, social media, sharing, authors",3,2024,Open Science Training
+21,"detection, real world, gender, depth, biases",10,2024,AI-generated image detection
+22,"national, salience, parties, multi level, immigration",5,2024,National Identity Formation
+23,"factorial, satisfaction, pandemic, regional, germany",3,2024,European Welfare Attitudes
+24,"search engines, engines, election, 2020, diversity",7,2024,Search Engine Performance Metrics
+25,"risk, sharing, children, 19 pandemic, 2020",7,2024,Children at Risk
+26,"social media, case, ideological, smaller, robustness",7,2024,Social Media Polarization
+27,"structural, similarity, networks, real world, growing",2,2024,Family Network Similarity
+28,"wording, quality, factorial, psychometric, algorithms",2,2024,Survey Question Pretesting
+-1,"energy, europe, election, networks, questionnaires",29,2025,
+0,"age, migration, germany, inequalities, vote",64,2025,German Migration Patterns
+1,"computational, text, political, language models llms, biases",7,2025,Machine Learning Errors
+2,"reliability, trends, facebook, search engine, sharing",11,2025,Facebook Reliability Concerns
+3,"democracy, attitudes, space, climate change, wing",16,2025,German Political Perception
+4,"polarization, political, channels, exposure, germany",17,2025,Polarization and Misinformation
+5,"quality, online, detecting, learning, increasing",2,2025,Media Trust Research
+6,"inclusion, probability based, mixed mode panel, nonresponse, waves",9,2025,Panel Nonresponse Prediction
+7,"face, panel, mixed mode, response behavior, probability based",5,2025,Mixed Mode Survey Design
+8,"design, recruitment, effectiveness, online panel, stakeholders",1,2025,Online Panel Recruitment
+9,"government, metadata, channels, academic, actors",11,2025,Government Metadata Channels
+10,"students, 19 pandemic, hybrid, network, trust",7,2025,COVID-19 Trust Research
+11,"regional, questionnaire, satisfaction, multi level, comparability",5,2025,Survey Data Harmonization
+12,"quality, frameworks, social science, behavioral, gaps",8,2025,Digital Data Quality
+13,"diversity, europe, women, interventions, inequalities",13,2025,Gender Inequality in Academia
+14,"artificial intelligence, traits, scenarios, arguments, context",4,2025,Argument Quality Assessment
+15,"web, closed, pretesting, speech, questionnaire",6,2025,Open-ended probing
+16,"negative, driven, perceptions, forms, political communication",6,2025,Public Opinion Research
+18,"political communication, actors, web tracking, highlighting, predictive",3,2025,Political Knowledge Measurement
+19,"transformation, immigrants, debates, germany, large scale",1,2025,German Unification Processes
+20,"social media, open science, annotation, goal, trust",8,2025,Open Science Training
+21,"modeling, factor, valid, highlighting, settings",4,2025,AI-generated image detection
+22,"immigration, vote choice, individual level, right wing, news articles",6,2025,National Identity Formation
+23,"labor, levels, preference, crises, european union eu",6,2025,European Welfare Attitudes
+24,"performance, natural language processing, democracy, search engines, gender",4,2025,Search Engine Performance Metrics
+26,"discourse, polarization, social media, election, dynamics",5,2025,Social Media Polarization
+27,"similarity, benchmark, networks, italy, cross national",7,2025,Family Network Similarity
+28,"distribution, machine learning, selection, outperforms, cognitive",5,2025,Survey Question Pretesting
+-1,"climate change, policy, crises, germany, evolution",1,2026,
+0,"misinformation, effects, german, preregistered, variance",2,2026,German Migration Patterns

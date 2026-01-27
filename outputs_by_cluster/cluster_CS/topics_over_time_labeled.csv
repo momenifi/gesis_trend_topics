@@ -1,0 +1,22 @@
+Topic,Words,Frequency,Timestamp,LLM_Label
+-1,"graph, network, tasks, artificial intelligence, state",22,2023,
+0,"training, increasing, context, artificial intelligence, individuals",6,2023,Online Disinformation Detection
+1,"semantic, knowledge graphs, pipeline, network, artificial intelligence",17,2023,Knowledge Graph Anomaly Detection
+2,"training, quality, automatically, vocabulary, detection",4,2023,Language Model Evaluation
+3,"text, dependency, state art, domain, graphs",11,2023,Graph Convolutional Networks
+4,"retrieval, context, graph, large language llms, trained",10,2023,Large Language Model Retrieval
+5,"training, f1 score, context, graph, artificial intelligence",8,2023,Software Mention Extraction
+6,"impact, characteristics, level, contribution, demonstrate",8,2023,Open Access Publishing Impact
+-1,"entities, retrieval, artificial intelligence, network, tasks",44,2024,
+0,"community, explore, role, social media, knowledge graphs",21,2024,Online Disinformation Detection
+1,"domain, detection, social media, knowledge graphs, gap",14,2024,Knowledge Graph Anomaly Detection
+2,"future, llms, vocabulary, accuracy, application",7,2024,Language Model Evaluation
+4,"impact, trained, semantic, llms, graph",8,2024,Large Language Model Retrieval
+5,"large language, llms, training, retrieval, social media",8,2024,Software Mention Extraction
+6,"reference, impact, account, community, outperforms",5,2024,Open Access Publishing Impact
+-1,"retrieval, network, large language, context, llms",19,2025,
+0,"task, retrieval, scientific, impact, social media",13,2025,Online Disinformation Detection
+1,"semantic, detection, knowledge graphs, future, domains",6,2025,Knowledge Graph Anomaly Detection
+2,"vocabulary, accuracy, tools, detection, time",9,2025,Language Model Evaluation
+3,"domain, graph, better, intelligence, state art",8,2025,Graph Convolutional Networks
+-1,"tasks, large language llms, web, graph, artificial intelligence",2,2026,
