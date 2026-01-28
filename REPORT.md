@@ -83,6 +83,10 @@ For each discipline cluster (e.g., `outputs_by_cluster/cluster_SS/`):
 - `hierarchical_topics_raw.csv` contains the hierarchy tree used for the topic dendrogram.
 - `topics_hierarchy.html` and `hierarchical_documents.html` are interactive visualizations (when generated).
 
+### What Topic -1 Means
+   In BERTopic, `Topic = -1` represents outliers or noise. These documents did not fit well into any cluster, so they are not assigned to a specific topic.
+
+
 In the visualization output folder (e.g., `outputs_viz/`):
 - `top_topics_<CLUSTER>.png` is a table view of the top topics.
 - `treemap_topics_<CLUSTER>.png` shows topic size as a treemap.
@@ -101,5 +105,3 @@ In the visualization output folder (e.g., `outputs_viz/`):
 - Topic assignments are probabilistic and may be less reliable for short or low-quality abstracts.
 - Results depend on the input data and preprocessing choices, so different datasets can yield different topics.
 
-## What Topic -1 Means
-In BERTopic, `Topic = -1` represents outliers or noise. These documents did not fit well into any cluster, so they are not assigned to a specific topic.
