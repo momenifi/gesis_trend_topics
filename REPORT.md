@@ -70,6 +70,17 @@ How labeling works:
 
 This approach ties labels directly to real publications, which makes them more trustworthy than labels based only on keywords.
 
+## Stopwords (How We Handle Them)
+Stopwords are common words that don’t help distinguish topics (e.g., “study”, “results”, “data”). We remove them to improve topic quality.
+
+We use two sources of stopwords:
+1) Standard English stopwords (from scikit-learn’s `ENGLISH_STOP_WORDS`).
+2) A custom list of research-generic terms such as “research”, “study”, “analysis”, “data”, “method”, and “results”.
+
+Additionally, for the CS cluster we remove ML/NLP-specific boilerplate terms (e.g., “model”, “learning”, “embedding”, “transformer”, “bert”, “gpt”), so topics are not dominated by generic ML vocabulary.
+
+These stopwords are applied in the `CountVectorizer` before topic terms are extracted, which helps surface more informative, discipline-specific keywords.
+
 ## Outputs Produced
 For each discipline cluster (e.g., `outputs_by_cluster/cluster_SS/`):
 - `topic_info_raw.csv` contains the raw topic terms before any labeling.
@@ -83,14 +94,15 @@ For each discipline cluster (e.g., `outputs_by_cluster/cluster_SS/`):
 - `hierarchical_topics_raw.csv` contains the hierarchy tree used for the topic dendrogram.
 - `topics_hierarchy.html` and `hierarchical_documents.html` are interactive visualizations (when generated).
 
-#### Notice: What Topic -1 Means
-   In BERTopic, `Topic = -1` represents outliers or noise. These documents did not fit well into any cluster, so they are not assigned to a specific topic.
-
-
 In the visualization output folder (e.g., `outputs_viz/`):
 - `top_topics_<CLUSTER>.png` is a table view of the top topics.
 - `treemap_topics_<CLUSTER>.png` shows topic size as a treemap.
 - `topic_trends_<CLUSTER>.png` shows topic frequency over time.
+  
+#### Notice: What Topic -1 Means
+   In BERTopic, `Topic = -1` represents outliers or noise. These documents did not fit well into any cluster, so they are not assigned to a specific topic.
+
+
 
 ## Why This Is Useful
 - Faster understanding of large literature collections
@@ -104,4 +116,7 @@ In the visualization output folder (e.g., `outputs_viz/`):
 - Labeling only uses the documents that fit into the model context window, not necessarily every document.
 - Topic assignments are probabilistic and may be less reliable for short or low-quality abstracts.
 - Results depend on the input data and preprocessing choices, so different datasets can yield different topics.
+
+## What Topic -1 Means
+In BERTopic, `Topic = -1` represents outliers or noise. These documents did not fit well into any cluster, so they are not assigned to a specific topic.
 
