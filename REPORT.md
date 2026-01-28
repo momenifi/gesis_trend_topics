@@ -83,7 +83,7 @@ For each discipline cluster (e.g., `outputs_by_cluster/cluster_SS/`):
 - `hierarchical_topics_raw.csv` contains the hierarchy tree used for the topic dendrogram.
 - `topics_hierarchy.html` and `hierarchical_documents.html` are interactive visualizations (when generated).
 
-### What Topic -1 Means
+#### Notice: What Topic -1 Means
    In BERTopic, `Topic = -1` represents outliers or noise. These documents did not fit well into any cluster, so they are not assigned to a specific topic.
 
 
