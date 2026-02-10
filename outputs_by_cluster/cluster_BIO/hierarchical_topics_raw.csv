@@ -1,3 +1,2 @@
 Parent_ID,Parent_Name,Topics,Child_Left_ID,Child_Left_Name,Child_Right_ID,Child_Right_Name,Distance
-4,life_prevalence_test_germany_registration,"[0, 1, 2]",1,test_registration_correlated_early_groups,3,prevalence_germany_model_political_satisfaction,0.8320505401653668
-3,prevalence_germany_model_political_satisfaction,"[0, 2]",2,prevalence_life_germany_recruitment_improve,0,political_framework_germany_measure_willingness,0.6049755015476317
+2,german_prevalence_age_personality_neck,"[0, 1]",0,german_uncertainty_childhood_psychotherapy_life expectancy,1,neck_baymedr_cup_prescreening_equivalence non inferiority,0.8819234239459057

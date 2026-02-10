@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Hierarchical Topics (LLM)</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 16px;
+      background: #fafafa;
+    }
+    #chart {
+      border: 1px solid #e5e7eb;
+      background: #ffffff;
+      max-height: 90vh;
+      overflow: auto;
+    }
+    .node circle {
+      fill: #4c78a8;
+      stroke: #2b4c6f;
+      stroke-width: 1px;
+    }
+    .node text {
+      font-size: 12px;
+      fill: #1f2933;
+    }
+    .node .toggle {
+      font-size: 12px;
+      fill: #fff;
+      pointer-events: none;
+    }
+    .link {
+      fill: none;
+      stroke: #9fb3c8;
+      stroke-width: 1.2px;
+    }
+  </style>
+</head>
+<body>
+<h2>Hierarchical Topics (LLM Labels)</h2>
+<div id="chart"></div>
+<script>
+const treeData = {"id": "P56", "name": "comparative political and survey research (n=823)", "lines": 2, "tooltip": "comparative political and survey research; mixed-mode and online data collection; media, polarization, and public opinion", "children": [{"id": "P53", "name": "mixed-mode panel survey methodology (n=164)", "lines": 2, "tooltip": "mixed-mode panel survey methodology; online panel recruitment strategies; survey data quality and pretesting", "children": [{"id": "P34", "name": "mixed-mode panel survey methodology (n=94)", "lines": 2, "tooltip": "mixed-mode panel survey methodology; online panel recruitment strategies; survey incentives and response rates", "children": [{"id": "P29", "name": "probability-based online panel surveys (n=63)", "lines": 2, "tooltip": "probability-based online panel surveys; panel recruitment and incentives; panel conditioning and response quality", "children": [{"id": "T6", "name": "Panel survey nonresponse modeling (T6), n=32", "lines": 2, "tooltip": "Panel survey nonresponse modeling; Machine learning in panel attrition; Mixed-mode panel data quality"}, {"id": "T8", "name": "Probability-based online panel recruitment (T8), n=31", "lines": 3, "tooltip": "Probability-based online panel recruitment; Mixed-mode survey participation; Online panel incentives and access"}]}, {"id": "T7", "name": "Mixed-mode survey methodologies (T7), n=31", "lines": 2, "tooltip": "Mixed-mode survey methodologies; Face-to-face versus web surveys; Survey mode effects and costs"}]}, {"id": "P44", "name": "survey translation and comparability (n=70)", "lines": 2, "tooltip": "survey translation and comparability; questionnaire design and response quality; web survey methodology innovations", "children": [{"id": "P41", "name": "survey methodology and data quality (n=44)", "lines": 2, "tooltip": "survey methodology and data quality; questionnaire design and pretesting; comparability and harmonization in surveys", "children": [{"id": "T11", "name": "Survey data harmonization methods (T11), n=23", "lines": 2, "tooltip": "Survey data harmonization methods; Comparability in cross-national surveys; Non-probability sampling and governance"}, {"id": "T15", "name": "Web survey question pretesting (T15), n=21", "lines": 2, "tooltip": "Web survey question pretesting; Open-ended and closed probes; Survey response quality assessment"}]}, {"id": "P38", "name": "Questionnaire translation and validation (n=26)", "lines": 2, "tooltip": "Questionnaire translation and validation; Survey pretesting and measurement quality; Multilingual survey methodology", "children": [{"id": "T28", "name": "Survey pretesting and measurement quality (T28), n=10", "lines": 3, "tooltip": "Survey pretesting and measurement quality; Questionnaire design and response bias; Prevalence estimation in survey research"}, {"id": "T17", "name": "multilingual questionnaire translation methods (T17), n=16", "lines": 3, "tooltip": "multilingual questionnaire translation methods; machine translation in surveys; translation errors in survey research"}]}]}]}, {"id": "P55", "name": "political attitudes and discourse (n=659)", "lines": 2, "tooltip": "political attitudes and discourse; computational methods in social science; survey research and measurement", "children": [{"id": "P54", "name": "computational social science methods (n=609)", "lines": 2, "tooltip": "computational social science methods; digital trace data analysis; social and political behavior", "children": [{"id": "P50", "name": "computational methods in social science (n=142)", "lines": 2, "tooltip": "computational methods in social science; large language models in research; argument quality and reproducibility", "children": [{"id": "P47", "name": "similarity and bias in networks (n=25)", "lines": 2, "tooltip": "similarity and bias in networks; family and social network analysis; model fit and detection methods", "children": [{"id": "T27", "name": "Family network structure analysis (T27), n=11", "lines": 2, "tooltip": "Family network structure analysis; Kinship networks in Italy and US; Intergenerational relationships and correlations"}, {"id": "T21", "name": "Gender bias in image modeling (T21), n=14", "lines": 2, "tooltip": "Gender bias in image modeling; AI-generated image detection; Goodness-of-fit index evaluation"}]}, {"id": "P45", "name": "computational methods in social science (n=117)", "lines": 2, "tooltip": "computational methods in social science; large language models in research; argument mining and open science", "children": [{"id": "T14", "name": "Argument quality assessment methods (T14), n=21", "lines": 3, "tooltip": "Argument quality assessment methods; Computational argument mining techniques; Large language models in argumentation"}, {"id": "P39", "name": "computational methods in social science (n=96)", "lines": 2, "tooltip": "computational methods in social science; large language models in research; open science and reproducibility", "children": [{"id": "P33", "name": "computational text analysis in social science (n=81)", "lines": 3, "tooltip": "computational text analysis in social science; large language models in research; scholarly metadata and bibliometrics", "children": [{"id": "T1", "name": "Large language models in research (T1), n=50", "lines": 2, "tooltip": "Large language models in research; Automated text analysis methods; Machine learning errors in annotation"}, {"id": "T9", "name": "Open scholarly metadata analysis (T9), n=31", "lines": 2, "tooltip": "Open scholarly metadata analysis; Scientific communication channels; Named entity recognition in research"}]}, {"id": "T20", "name": "Open science communication practices (T20), n=15", "lines": 3, "tooltip": "Open science communication practices; Scientific information on social media; Reproducibility and research training"}]}]}]}, {"id": "P52", "name": "survey-based social science research (n=467)", "lines": 2, "tooltip": "survey-based social science research; digital society and political behavior; measurement and attitudes in Germany", "children": [{"id": "P48", "name": "social change and inequality (n=297)", "lines": 2, "tooltip": "social change and inequality; migration, gender, and identity; digitalization and survey measurement", "children": [{"id": "P46", "name": "Social Attitudes and Group Differences (n=261)", "lines": 2, "tooltip": "Social Attitudes and Group Differences; Gender, Migration, and Political Behavior; Survey Research on Social Inclusion", "children": [{"id": "P37", "name": "Social attitudes and inequalities (n=240)", "lines": 2, "tooltip": "Social attitudes and inequalities; Migration, identity, and integration; Political participation and public opinion", "children": [{"id": "T16", "name": "Public opinion and privacy (T16), n=19", "lines": 2, "tooltip": "Public opinion and privacy; Data-driven political campaigning; Psychology of political communication"}, {"id": "P32", "name": "social inequality and migration (n=221)", "lines": 2, "tooltip": "social inequality and migration; political attitudes and participation; gender roles and social integration", "children": [{"id": "T3", "name": "Political attitudes and perceptions (T3), n=40", "lines": 2, "tooltip": "Political attitudes and perceptions; Multilevel political trust in Germany; Ideology and political participation"}, {"id": "T0", "name": "Migration and integration in Germany (T0), n=181", "lines": 2, "tooltip": "Migration and integration in Germany; Personality and political differences; Social diversity and elections"}]}]}, {"id": "T13", "name": "Gender equality in European organizations (T13), n=21", "lines": 3, "tooltip": "Gender equality in European organizations; Measuring gender-based violence; Inclusive policies in higher education"}]}, {"id": "P42", "name": "digital data quality in social research (n=36)", "lines": 2, "tooltip": "digital data quality in social research; German unification and social transformation; measurement invariance in comparative studies", "children": [{"id": "T12", "name": "Digital data quality frameworks (T12), n=21", "lines": 2, "tooltip": "Digital data quality frameworks; Measurement invariance in social science; Social media data management"}, {"id": "T19", "name": "German unification and transformation (T19), n=15", "lines": 3, "tooltip": "German unification and transformation; Post-war German social change; Political attitudes in unified Germany"}]}]}, {"id": "P51", "name": "digital trace data in politics (n=170)", "lines": 2, "tooltip": "digital trace data in politics; online media and political attitudes; web tracking and political discourse", "children": [{"id": "P40", "name": "digital trace data in research (n=72)", "lines": 2, "tooltip": "digital trace data in research; web browsing and tracking analysis; online political behavior measurement", "children": [{"id": "T24", "name": "Search engines in political science (T24), n=13", "lines": 3, "tooltip": "Search engines in political science; Open science and algorithm audits; News search performance and bias"}, {"id": "P36", "name": "digital trace data in research (n=59)", "lines": 2, "tooltip": "digital trace data in research; web browsing and political behavior; online data collection methods", "children": [{"id": "T2", "name": "Digital trace data collection (T2), n=43", "lines": 2, "tooltip": "Digital trace data collection; Web browsing behavior analysis; Data sharing and privacy"}, {"id": "T18", "name": "Online political information seeking (T18), n=16", "lines": 3, "tooltip": "Online political information seeking; Web tracking and political attitudes; Incivility and political content exposure"}]}]}, {"id": "P49", "name": "political discourse and media trust (n=98)", "lines": 2, "tooltip": "political discourse and media trust; social media and polarization; election campaigns and misinformation", "children": [{"id": "P43", "name": "media trust and polarization (n=84)", "lines": 2, "tooltip": "media trust and polarization; social media and political discourse; misinformation and news consumption", "children": [{"id": "T26", "name": "Political discourse on social media (T26), n=12", "lines": 2, "tooltip": "Political discourse on social media; Social media polarization and elections; Online political campaigning analysis"}, {"id": "P31", "name": "media trust and misinformation (n=72)", "lines": 2, "tooltip": "media trust and misinformation; political polarization and news consumption; journalism bias and measurement", "children": [{"id": "T4", "name": "Social media and political polarization (T4), n=37", "lines": 3, "tooltip": "Social media and political polarization; Misinformation, elections, and media security; News framing and democratic attitudes"}, {"id": "T5", "name": "Media trust and measurement (T5), n=35", "lines": 2, "tooltip": "Media trust and measurement; Fake news and hate speech; Journalism, bias, and group attitudes"}]}]}, {"id": "T22", "name": "National identity and right-wing voting (T22), n=14", "lines": 3, "tooltip": "National identity and right-wing voting; Immigration, media, and far-right politics; Nationalism, voting behavior, and media"}]}]}]}]}, {"id": "P35", "name": "European solidarity and welfare attitudes (n=50)", "lines": 2, "tooltip": "European solidarity and welfare attitudes; COVID-19 social and political responses; Survey research on crises and governance", "children": [{"id": "T23", "name": "European welfare attitudes and crises (T23), n=13", "lines": 3, "tooltip": "European welfare attitudes and crises; Solidarity and governance in Europe; Public opinion on EU welfare"}, {"id": "P30", "name": "COVID-19 social science surveys (n=37)", "lines": 2, "tooltip": "COVID-19 social science surveys; Pandemic risk and public attitudes; Health crises and data quality", "children": [{"id": "T25", "name": "Children and youth at risk (T25), n=13", "lines": 2, "tooltip": "Children and youth at risk; Migration and pandemic vulnerabilities; Social risks during COVID-19"}, {"id": "T10", "name": "COVID-19 social science surveys (T10), n=24", "lines": 2, "tooltip": "COVID-19 social science surveys; Pandemic trust and data quality; Conspiracy beliefs during COVID-19"}]}]}]}]};
+const collapsedDepth = 1;
+
+const width = 1800;
+const dx = 180;
+const dy = 160;
+const margin = {top: 20, left: 60};
+const wrapWidth = 180;
+const lineHeight = 14;
+
+const root = d3.hierarchy(treeData);
+root.x0 = 0;
+root.y0 = 0;
+
+function collapse(d) {
+  if (d.children) {
+    d._children = d.children;
+    d._children.forEach(collapse);
+    d.children = null;
+  }
+}
+
+root.descendants().forEach(d => {
+  if (d.depth >= collapsedDepth) {
+    collapse(d);
+  }
+});
+
+const tree = d3.tree()
+  .nodeSize([dx, dy])
+  .separation((a, b) => {
+    const la = a.data.lines || 1;
+    const lb = b.data.lines || 1;
+    const base = a.parent === b.parent ? 1 : 1.2;
+    return base * Math.max(la, lb);
+  });
+const diagonal = d3.linkVertical().x(d => d.x).y(d => d.y);
+
+const svg = d3.select("#chart").append("svg")
+  .attr("width", width)
+  .style("font", "12px sans-serif");
+
+const gMain = svg.append("g");
+const gLink = gMain.append("g").attr("class", "links");
+const gNode = gMain.append("g").attr("class", "nodes");
+
+function update(source) {
+  const sourcePos = {x: (source.x0 ?? source.x), y: (source.y0 ?? source.y)};
+  const nodes = root.descendants();
+  const links = root.links();
+
+  tree(root);
+
+  let left = root;
+  let right = root;
+  root.eachBefore(node => {
+    if (node.x < left.x) left = node;
+    if (node.x > right.x) right = node;
+  });
+
+  const widthNeeded = right.x - left.x + dx * 4;
+  const heightNeeded = root.height * dy + dy * 2;
+  const svgWidth = Math.max(width, widthNeeded) + margin.left + 40;
+  const svgHeight = heightNeeded + margin.top + 40;
+  svg.attr("width", svgWidth).attr("height", svgHeight);
+  gMain.attr("transform", `translate(${margin.left - left.x + dx * 2},${margin.top})`);
+
+  const node = gNode.selectAll("g").data(nodes, d => d.id);
+
+  const nodeEnter = node.enter().append("g")
+    .attr("class", "node")
+    .attr("transform", d => `translate(${sourcePos.x},${sourcePos.y})`)
+    .on("click", (event, d) => {
+      if (d.children) {
+        d._children = d.children;
+        d.children = null;
+      } else {
+        d.children = d._children;
+        d._children = null;
+      }
+      update(d);
+    });
+
+  nodeEnter.append("circle")
+    .attr("r", 5);
+
+  const label = nodeEnter.append("text")
+    .attr("dy", "0.31em")
+    .attr("x", d => d.children || d._children ? -10 : 10)
+    .attr("text-anchor", d => d.children || d._children ? "end" : "start")
+    .text(d => d.data.name);
+
+  label.call(wrap, wrapWidth);
+  label.clone(true).lower().attr("stroke", "white");
+
+  nodeEnter.append("text")
+    .attr("class", "toggle")
+    .attr("dy", "0.31em")
+    .attr("x", -2)
+    .attr("text-anchor", "middle")
+    .text(d => d._children ? "+" : d.children ? "-" : "");
+
+  nodeEnter.append("title").text(d => d.data.tooltip || d.data.name);
+
+  const nodeUpdate = nodeEnter.merge(node);
+  nodeUpdate.transition().duration(250)
+    .attr("transform", d => `translate(${d.x},${d.y})`);
+
+  nodeUpdate.select("text.toggle")
+    .text(d => d._children ? "+" : d.children ? "-" : "");
+
+  const nodeExit = node.exit().transition().duration(250)
+    .attr("transform", d => `translate(${sourcePos.x},${sourcePos.y})`)
+    .remove();
+
+  nodeExit.select("circle").attr("r", 0);
+
+  const link = gLink.selectAll("path").data(links, d => d.target.id);
+
+  const linkEnter = link.enter().append("path")
+    .attr("class", "link")
+    .attr("d", d => {
+      const o = {x: sourcePos.x, y: sourcePos.y};
+      return diagonal({source: o, target: o});
+    });
+
+  linkEnter.merge(link).transition().duration(250)
+    .attr("d", diagonal);
+
+  link.exit().transition().duration(250)
+    .attr("d", d => {
+      const o = {x: sourcePos.x, y: sourcePos.y};
+      return diagonal({source: o, target: o});
+    })
+    .remove();
+
+  root.eachBefore(d => {
+    d.x0 = d.x;
+    d.y0 = d.y;
+  });
+}
+
+update(root);
+
+function wrap(text, width) {
+  text.each(function() {
+    const text = d3.select(this);
+    const words = text.text().split(/\s+/).reverse();
+    let word;
+    let line = [];
+    let lineNumber = 0;
+    const x = text.attr("x");
+    const y = text.attr("y");
+    const dyText = parseFloat(text.attr("dy")) || 0;
+    let tspan = text.text(null).append("tspan")
+      .attr("x", x)
+      .attr("y", y)
+      .attr("dy", dyText + "em");
+
+    while ((word = words.pop())) {
+      line.push(word);
+      tspan.text(line.join(" "));
+      if (tspan.node().getComputedTextLength() > width) {
+        line.pop();
+        tspan.text(line.join(" "));
+        line = [word];
+        tspan = text.append("tspan")
+          .attr("x", x)
+          .attr("y", y)
+          .attr("dy", (lineNumber + 1) * (lineHeight / 12) + "em")
+          .text(word);
+        lineNumber += 1;
+      }
+    }
+  });
+}
+</script>
+</body>
+</html>

@@ -1,27 +1,22 @@
 Topic,Words,Frequency,Timestamp
--1,"presents, detect, tasks, online, named entity recognition",1,2023
-0,"language, training, domain, impact, accuracy",23,2023
-1,"training, claims, online, increasing, context",6,2023
-2,"scientific, publications, extraction, intelligence, importance",16,2023
-3,"recent years, resource, relationships, compared, scale",10,2023
-4,"graph, user, state art, space, performance",17,2023
-5,"detection, knowledge, field, high, relationships",6,2023
-6,"types, named entity recognition, academic, corpus, role",3,2023
-8,"long, power, improve, role, publications",4,2023
--1,"task, named entity recognition, f1, evidence, community",10,2024
-0,"language, tasks, impact, accuracy, future",24,2024
-1,"users, topics, dynamic, training, search",15,2024
-2,"topics, extraction, open, language, evidence",7,2024
-3,"domain, level, compared, sources, role",10,2024
-5,"search, quality, semantic, experiments, real world",10,2024
-6,"extraction, state art, graph, author, characteristics",13,2024
-7,"online, topics, applications, impact, employed",15,2024
-8,"corpus, impact, accuracy, recommendations, time",5,2024
--1,"highlight, evaluation, organizations, users, author",2,2025
-0,"domain, accuracy, training, patterns, real world",15,2025
-1,"online, power, time, focus, training",7,2025
-2,"extraction, network, topics, long, offer",4,2025
-3,"network, insights, future, presents, increasing",4,2025
-4,"graph, better, search, recent years, network",4,2025
-5,"improve, user, search, field, key",3,2025
-8,"analyze, offer, time, corpus, training",2,2025
+-1,"graph, network, tasks, artificial intelligence, state",22,2023
+0,"training, increasing, context, artificial intelligence, individuals",6,2023
+1,"semantic, knowledge graphs, pipeline, network, artificial intelligence",17,2023
+2,"training, quality, automatically, vocabulary, detection",4,2023
+3,"text, dependency, state art, domain, graphs",11,2023
+4,"retrieval, context, graph, large language llms, trained",10,2023
+5,"training, f1 score, context, graph, artificial intelligence",8,2023
+6,"impact, characteristics, level, contribution, demonstrate",8,2023
+-1,"entities, retrieval, artificial intelligence, network, tasks",44,2024
+0,"community, explore, role, social media, knowledge graphs",21,2024
+1,"domain, detection, social media, knowledge graphs, gap",14,2024
+2,"future, llms, vocabulary, accuracy, application",7,2024
+4,"impact, trained, semantic, llms, graph",8,2024
+5,"large language, llms, training, retrieval, social media",8,2024
+6,"reference, impact, account, community, outperforms",5,2024
+-1,"retrieval, network, large language, context, llms",19,2025
+0,"task, retrieval, scientific, impact, social media",13,2025
+1,"semantic, detection, knowledge graphs, future, domains",6,2025
+2,"vocabulary, accuracy, tools, detection, time",9,2025
+3,"domain, graph, better, intelligence, state art",8,2025
+-1,"tasks, large language llms, web, graph, artificial intelligence",2,2026

@@ -1,0 +1,223 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Hierarchical Topics (LLM)</title>
+  <script src="https://d3js.org/d3.v7.min.js"></script>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 16px;
+      background: #fafafa;
+    }
+    #chart {
+      border: 1px solid #e5e7eb;
+      background: #ffffff;
+      max-height: 90vh;
+      overflow: auto;
+    }
+    .node circle {
+      fill: #4c78a8;
+      stroke: #2b4c6f;
+      stroke-width: 1px;
+    }
+    .node text {
+      font-size: 12px;
+      fill: #1f2933;
+    }
+    .node .toggle {
+      font-size: 12px;
+      fill: #fff;
+      pointer-events: none;
+    }
+    .link {
+      fill: none;
+      stroke: #9fb3c8;
+      stroke-width: 1.2px;
+    }
+  </style>
+</head>
+<body>
+<h2>Hierarchical Topics (LLM Labels)</h2>
+<div id="chart"></div>
+<script>
+const treeData = {"id": "P2", "name": "Bayesian methods in clinical research (n=49)", "lines": 2, "tooltip": "Bayesian methods in clinical research; Uncertainty and decision-making in health; Diagnosis and outcomes in head and neck cancer", "children": [{"id": "T0", "name": "Psychological traits and uncertainty (T0), n=33", "lines": 2, "tooltip": "Psychological traits and uncertainty; Childhood experiences in Germany; Cross-cultural personality assessment"}, {"id": "T1", "name": "Bayesian analysis in clinical trials (T1), n=16", "lines": 3, "tooltip": "Bayesian analysis in clinical trials; Head and neck cancer diagnostics; Equivalence and non-inferiority studies"}]};
+const collapsedDepth = 1;
+
+const width = 1800;
+const dx = 180;
+const dy = 160;
+const margin = {top: 20, left: 60};
+const wrapWidth = 180;
+const lineHeight = 14;
+
+const root = d3.hierarchy(treeData);
+root.x0 = 0;
+root.y0 = 0;
+
+function collapse(d) {
+  if (d.children) {
+    d._children = d.children;
+    d._children.forEach(collapse);
+    d.children = null;
+  }
+}
+
+root.descendants().forEach(d => {
+  if (d.depth >= collapsedDepth) {
+    collapse(d);
+  }
+});
+
+const tree = d3.tree()
+  .nodeSize([dx, dy])
+  .separation((a, b) => {
+    const la = a.data.lines || 1;
+    const lb = b.data.lines || 1;
+    const base = a.parent === b.parent ? 1 : 1.2;
+    return base * Math.max(la, lb);
+  });
+const diagonal = d3.linkVertical().x(d => d.x).y(d => d.y);
+
+const svg = d3.select("#chart").append("svg")
+  .attr("width", width)
+  .style("font", "12px sans-serif");
+
+const gMain = svg.append("g");
+const gLink = gMain.append("g").attr("class", "links");
+const gNode = gMain.append("g").attr("class", "nodes");
+
+function update(source) {
+  const sourcePos = {x: (source.x0 ?? source.x), y: (source.y0 ?? source.y)};
+  const nodes = root.descendants();
+  const links = root.links();
+
+  tree(root);
+
+  let left = root;
+  let right = root;
+  root.eachBefore(node => {
+    if (node.x < left.x) left = node;
+    if (node.x > right.x) right = node;
+  });
+
+  const widthNeeded = right.x - left.x + dx * 4;
+  const heightNeeded = root.height * dy + dy * 2;
+  const svgWidth = Math.max(width, widthNeeded) + margin.left + 40;
+  const svgHeight = heightNeeded + margin.top + 40;
+  svg.attr("width", svgWidth).attr("height", svgHeight);
+  gMain.attr("transform", `translate(${margin.left - left.x + dx * 2},${margin.top})`);
+
+  const node = gNode.selectAll("g").data(nodes, d => d.id);
+
+  const nodeEnter = node.enter().append("g")
+    .attr("class", "node")
+    .attr("transform", d => `translate(${sourcePos.x},${sourcePos.y})`)
+    .on("click", (event, d) => {
+      if (d.children) {
+        d._children = d.children;
+        d.children = null;
+      } else {
+        d.children = d._children;
+        d._children = null;
+      }
+      update(d);
+    });
+
+  nodeEnter.append("circle")
+    .attr("r", 5);
+
+  const label = nodeEnter.append("text")
+    .attr("dy", "0.31em")
+    .attr("x", d => d.children || d._children ? -10 : 10)
+    .attr("text-anchor", d => d.children || d._children ? "end" : "start")
+    .text(d => d.data.name);
+
+  label.call(wrap, wrapWidth);
+  label.clone(true).lower().attr("stroke", "white");
+
+  nodeEnter.append("text")
+    .attr("class", "toggle")
+    .attr("dy", "0.31em")
+    .attr("x", -2)
+    .attr("text-anchor", "middle")
+    .text(d => d._children ? "+" : d.children ? "-" : "");
+
+  nodeEnter.append("title").text(d => d.data.tooltip || d.data.name);
+
+  const nodeUpdate = nodeEnter.merge(node);
+  nodeUpdate.transition().duration(250)
+    .attr("transform", d => `translate(${d.x},${d.y})`);
+
+  nodeUpdate.select("text.toggle")
+    .text(d => d._children ? "+" : d.children ? "-" : "");
+
+  const nodeExit = node.exit().transition().duration(250)
+    .attr("transform", d => `translate(${sourcePos.x},${sourcePos.y})`)
+    .remove();
+
+  nodeExit.select("circle").attr("r", 0);
+
+  const link = gLink.selectAll("path").data(links, d => d.target.id);
+
+  const linkEnter = link.enter().append("path")
+    .attr("class", "link")
+    .attr("d", d => {
+      const o = {x: sourcePos.x, y: sourcePos.y};
+      return diagonal({source: o, target: o});
+    });
+
+  linkEnter.merge(link).transition().duration(250)
+    .attr("d", diagonal);
+
+  link.exit().transition().duration(250)
+    .attr("d", d => {
+      const o = {x: sourcePos.x, y: sourcePos.y};
+      return diagonal({source: o, target: o});
+    })
+    .remove();
+
+  root.eachBefore(d => {
+    d.x0 = d.x;
+    d.y0 = d.y;
+  });
+}
+
+update(root);
+
+function wrap(text, width) {
+  text.each(function() {
+    const text = d3.select(this);
+    const words = text.text().split(/\s+/).reverse();
+    let word;
+    let line = [];
+    let lineNumber = 0;
+    const x = text.attr("x");
+    const y = text.attr("y");
+    const dyText = parseFloat(text.attr("dy")) || 0;
+    let tspan = text.text(null).append("tspan")
+      .attr("x", x)
+      .attr("y", y)
+      .attr("dy", dyText + "em");
+
+    while ((word = words.pop())) {
+      line.push(word);
+      tspan.text(line.join(" "));
+      if (tspan.node().getComputedTextLength() > width) {
+        line.pop();
+        tspan.text(line.join(" "));
+        line = [word];
+        tspan = text.append("tspan")
+          .attr("x", x)
+          .attr("y", y)
+          .attr("dy", (lineNumber + 1) * (lineHeight / 12) + "em")
+          .text(word);
+        lineNumber += 1;
+      }
+    }
+  });
+}
+</script>
+</body>
+</html>

@@ -32,6 +32,9 @@ DATA_PATH = "abstracts.csv"              # deine Datei mit $$-Separator
 OUTPUT_BASE_DIR = "outputs_by_cluster"   # Basisordner für alle Ergebnisordner
 
 EMBEDDING_MODEL = "paraphrase-multilingual-MiniLM-L12-v2"
+TITLE_COLUMN = "title"
+KEYWORD_COLUMN = "keyword"
+KEYWORD_WEIGHT = 2
 
 MIN_CLUSTER_SIZE = 10
 N_COMPONENTS = 5
@@ -45,6 +48,9 @@ DEFAULT_CONFIG = {
     "data_path": DATA_PATH,
     "output_base_dir": OUTPUT_BASE_DIR,
     "embedding_model": EMBEDDING_MODEL,
+    "title_column": TITLE_COLUMN,
+    "keyword_column": KEYWORD_COLUMN,
+    "keyword_weight": KEYWORD_WEIGHT,
     "min_cluster_size": MIN_CLUSTER_SIZE,
     "n_components": N_COMPONENTS,
     "n_neighbors": N_NEIGHBORS,
@@ -67,12 +73,16 @@ def load_yaml_config(config_path: str) -> dict:
 def apply_config_overrides(config: dict):
     """Wendet Konfigurationswerte auf die Modul-Globals an."""
     global DATA_PATH, OUTPUT_BASE_DIR, EMBEDDING_MODEL
+    global TITLE_COLUMN, KEYWORD_COLUMN, KEYWORD_WEIGHT
     global MIN_CLUSTER_SIZE, N_COMPONENTS, N_NEIGHBORS, RANDOM_STATE
     global MIN_DOCS_FOR_CLUSTER
 
     DATA_PATH = config.get("data_path", DATA_PATH)
     OUTPUT_BASE_DIR = config.get("output_base_dir", OUTPUT_BASE_DIR)
     EMBEDDING_MODEL = config.get("embedding_model", EMBEDDING_MODEL)
+    TITLE_COLUMN = config.get("title_column", TITLE_COLUMN)
+    KEYWORD_COLUMN = config.get("keyword_column", KEYWORD_COLUMN)
+    KEYWORD_WEIGHT = int(config.get("keyword_weight", KEYWORD_WEIGHT))
 
     MIN_CLUSTER_SIZE = int(config.get("min_cluster_size", MIN_CLUSTER_SIZE))
     N_COMPONENTS = int(config.get("n_components", N_COMPONENTS))
@@ -98,6 +108,21 @@ def simple_clean(text: str) -> str:
     text = text.lower()
     text = re.sub(r"\s+", " ", text)
     return text.strip()
+
+
+def build_weighted_text(title: str, abstract: str, keywords: str, keyword_weight: int) -> str:
+    """Kombiniert Title+Abstract+Keywords, gewichtet Keywords durch Wiederholung."""
+    parts = []
+    if isinstance(title, str) and title.strip():
+        parts.append(title.strip())
+    if isinstance(abstract, str) and abstract.strip():
+        parts.append(abstract.strip())
+    if isinstance(keywords, str) and keywords.strip():
+        parts.append(keywords.strip())
+        if keyword_weight > 1:
+            parts.extend([keywords.strip()] * (keyword_weight - 1))
+    combined = " ".join(parts)
+    return simple_clean(combined)
 
 
 def compute_linear_trends(count_table: pd.DataFrame, top_n: int = 10):
@@ -274,7 +299,15 @@ def run_bertopic_for_cluster(df_cluster: pd.DataFrame, cluster_label: str):
     df["year"] = df["year"].astype(int)
     df = df.sort_values("year").reset_index(drop=True)
 
-    df["clean_text"] = df["abstract"].astype(str).apply(simple_clean)
+    df["clean_text"] = df.apply(
+        lambda row: build_weighted_text(
+            row.get(TITLE_COLUMN, ""),
+            row.get("abstract", ""),
+            row.get(KEYWORD_COLUMN, ""),
+            KEYWORD_WEIGHT,
+        ),
+        axis=1,
+    )
     docs = df["clean_text"].tolist()
     years = df["year"].tolist()
     n_docs = len(df)
@@ -369,6 +402,14 @@ def run_bertopic_for_cluster(df_cluster: pd.DataFrame, cluster_label: str):
         topics, probs = topic_model.fit_transform(docs)
 
     df["topic"] = topics
+    if probs is None:
+        df["topic_prob"] = np.nan
+    else:
+        probs_arr = np.asarray(probs)
+        if probs_arr.ndim == 1:
+            df["topic_prob"] = probs_arr
+        else:
+            df["topic_prob"] = np.max(probs_arr, axis=1)
 
     # 3b) Topic-Info VOR Auto-Labeling
     topic_info_raw = topic_model.get_topic_info()
@@ -398,6 +439,16 @@ def run_bertopic_for_cluster(df_cluster: pd.DataFrame, cluster_label: str):
     topic_info_short.to_csv(out_dir / "topic_info.csv", index=False)
 
     print(f"[{cluster_label}] Anzahl Topics (inkl. -1): {len(topic_info)}")
+
+    # Topic-Label pro Dokument zuordnen (falls vorhanden)
+    label_col = None
+    for col in ("CustomLabel", "Name"):
+        if col in topic_info.columns:
+            label_col = col
+            break
+    if label_col:
+        topic_label_map = dict(zip(topic_info["Topic"], topic_info[label_col]))
+        df["topic_label"] = df["topic"].map(topic_label_map)
 
     # 4) Hierarchische Topics
     real_topics = topic_info[topic_info["Topic"] != -1]
@@ -471,6 +522,14 @@ def run_bertopic_for_cluster(df_cluster: pd.DataFrame, cluster_label: str):
 
     # 7) Export Dokumente
     df.to_csv(out_dir / "docs_with_topics_and_macro_topics.csv", index=False)
+    # Publikationsliste mit Topic-Zuweisung (pro Cluster)
+    cols = [
+        TITLE_COLUMN, "abstract", "year", "source", KEYWORD_COLUMN,
+        "middle_group", "cluster", "topic", "topic_label", "topic_prob",
+    ]
+    export_cols = [c for c in cols if c in df.columns]
+    df[export_cols].to_csv(out_dir / "publications_with_topics.csv", index=False)
+    df[export_cols].to_excel(out_dir / "publications_with_topics.xlsx", index=False)
     print(f"[{cluster_label}] Fertig. Ergebnisse in {out_dir.resolve()}")
 
 
@@ -505,9 +564,12 @@ def main():
         header=0
     )
 
-    required_cols = {"title", "abstract", "year", "source", "middle_group"}
+    required_cols = {TITLE_COLUMN, "abstract", "year", "source", "middle_group"}
     if not required_cols.issubset(df.columns):
         raise ValueError(f"CSV braucht Spalten: {required_cols}, gefunden: {set(df.columns)}")
+    if KEYWORD_COLUMN not in df.columns:
+        print(f"Warnung: Spalte '{KEYWORD_COLUMN}' fehlt, verwende leere Keywords.")
+        df[KEYWORD_COLUMN] = ""
 
     # 2) Disziplin-Cluster zuordnen
     print("[2/3] Ordne Disziplin-Cluster zu ...")

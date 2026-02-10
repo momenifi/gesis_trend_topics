@@ -1,0 +1,88 @@
+Topic,Words,Frequency,Timestamp,LLM_Label
+-1,"mobile, political, children, european, attitudes",15,2023,
+0,"election, germany, migration, differences, age",50,2023,Migration and integration in Germany
+1,"machine learning, accuracy, access, text, language models",16,2023,Large language models in research
+2,"cases, reliability, behaviors, tracking, web browsing",12,2023,Digital trace data collection
+3,"party, trust, populist, personality traits, voting behavior",10,2023,Political attitudes and perceptions
+4,"media, candidate, negative, refugee, polarization",7,2023,Social media and political polarization
+5,"privacy, journalism, learning, groups, robustness",21,2023,Media trust and measurement
+6,"nonresponse, waves, machine learning, population, mixed mode panel",15,2023,Panel survey nonresponse modeling
+7,"sampling, mixed mode, germany, difference, addresses",12,2023,Mixed-mode survey methodologies
+8,"recruitment, online panel, probability based, mixed mode, quality",23,2023,Probability-based online panel recruitment
+9,"types, authors, web, correlation, machine learning",7,2023,Open scholarly metadata analysis
+10,"framing, search engines, covid 19 pandemic, beliefs, significant differences",3,2023,COVID-19 social science surveys
+11,"reduction, sampling, big, correlation, personality traits",13,2023,Survey data harmonization methods
+12,"work, digital, inclusion, measurement invariance, social science",9,2023,Digital data quality frameworks
+14,"option, assessment, competing, hypotheses, cross cultural",2,2023,Argument quality assessment methods
+15,"classification, closed, web, german language, interviewing",7,2023,Web survey question pretesting
+16,"public opinion, hypothesis, process, policymakers, forms",6,2023,Public opinion and privacy
+17,"split, questionnaire, errors, comparability, languages",7,2023,multilingual questionnaire translation methods
+18,"political, scores, german internet panel, uses, large scale",6,2023,Online political information seeking
+19,"processes, map, germany, past, heterogeneous",2,2023,German unification and transformation
+20,"open science, training, institutions, social media, yield",4,2023,Open science communication practices
+22,"large scale, salience, parties, right wing, cross cultural",3,2023,National identity and right-wing voting
+23,"european, levels, heterogeneity, communities, comparisons",4,2023,European welfare attitudes and crises
+24,"political science, open science, 2021, german federal election, engines",2,2023,Search engines in political science
+25,"children, risk, immigration, 19 pandemic, europe",6,2023,Children and youth at risk
+27,"complexity, machine learning, relationships, framework, network",2,2023,Family network structure analysis
+28,"cognitive, pretesting, version, interviews, algorithms",3,2023,Survey pretesting and measurement quality
+-1,"political, networks, search, natural language, long term",34,2024,
+0,"german, engagement, differences, age, migration",65,2024,Migration and integration in Germany
+1,"large language models, domain, machine learning, llms, parliamentary",27,2024,Large language models in research
+2,"facebook, web browsing, tracking, reliability, privacy",20,2024,Digital trace data collection
+3,"political, regional, germany, multilevel, preferences",14,2024,Political attitudes and perceptions
+4,"privacy, journalism, hybrid, russian, election campaigns",13,2024,Social media and political polarization
+5,"media, trust, learning, western, right wing",12,2024,Media trust and measurement
+6,"probability based, nonresponse, waves, gesis panel, different levels",8,2024,Panel survey nonresponse modeling
+7,"mixed mode, face, web, sampling, wave",14,2024,Mixed-mode survey methodologies
+8,"recruitment, affects, probability based, german internet panel, mixed mode",7,2024,Probability-based online panel recruitment
+9,"energy, pipeline, recognition, news articles, architecture",13,2024,Open scholarly metadata analysis
+10,"covid 19 pandemic, trust, social science, key, assessment",14,2024,COVID-19 social science surveys
+11,"governance, comparability, projects, health, trust",5,2024,Survey data harmonization methods
+12,"social science, digital, linking, position, exposure",4,2024,Digital data quality frameworks
+13,"contextual, women, impact, diversity, europe",8,2024,Gender equality in European organizations
+14,"arguments, mining, fine tuning, language model, llms",15,2024,Argument quality assessment methods
+15,"visual, pretesting, modes, questionnaire, closed",8,2024,Web survey question pretesting
+16,"privacy, campaigns, cross national, public opinion, negative",7,2024,Public opinion and privacy
+17,"machine, split, questionnaire, errors, german language",9,2024,multilingual questionnaire translation methods
+18,"political attitudes, tweets, web tracking, exposure, european union",7,2024,Online political information seeking
+19,"chapter, processes, germany, changes, political attitudes",12,2024,German unification and transformation
+20,"computational, open science, social media, sharing, authors",3,2024,Open science communication practices
+21,"detection, real world, gender, depth, biases",10,2024,Gender bias in image modeling
+22,"national, salience, parties, multi level, immigration",5,2024,National identity and right-wing voting
+23,"factorial, satisfaction, pandemic, regional, germany",3,2024,European welfare attitudes and crises
+24,"search engines, engines, election, 2020, diversity",7,2024,Search engines in political science
+25,"risk, sharing, children, 19 pandemic, 2020",7,2024,Children and youth at risk
+26,"social media, case, ideological, smaller, robustness",7,2024,Political discourse on social media
+27,"structural, similarity, networks, real world, growing",2,2024,Family network structure analysis
+28,"wording, quality, factorial, psychometric, algorithms",2,2024,Survey pretesting and measurement quality
+-1,"energy, europe, election, networks, questionnaires",29,2025,
+0,"age, migration, germany, inequalities, vote",64,2025,Migration and integration in Germany
+1,"computational, text, political, language models llms, biases",7,2025,Large language models in research
+2,"reliability, trends, facebook, search engine, sharing",11,2025,Digital trace data collection
+3,"democracy, attitudes, space, climate change, wing",16,2025,Political attitudes and perceptions
+4,"polarization, political, channels, exposure, germany",17,2025,Social media and political polarization
+5,"quality, online, detecting, learning, increasing",2,2025,Media trust and measurement
+6,"inclusion, probability based, mixed mode panel, nonresponse, waves",9,2025,Panel survey nonresponse modeling
+7,"face, panel, mixed mode, response behavior, probability based",5,2025,Mixed-mode survey methodologies
+8,"design, recruitment, effectiveness, online panel, stakeholders",1,2025,Probability-based online panel recruitment
+9,"government, metadata, channels, academic, actors",11,2025,Open scholarly metadata analysis
+10,"students, 19 pandemic, hybrid, network, trust",7,2025,COVID-19 social science surveys
+11,"regional, questionnaire, satisfaction, multi level, comparability",5,2025,Survey data harmonization methods
+12,"quality, frameworks, social science, behavioral, gaps",8,2025,Digital data quality frameworks
+13,"diversity, europe, women, interventions, inequalities",13,2025,Gender equality in European organizations
+14,"artificial intelligence, traits, scenarios, arguments, context",4,2025,Argument quality assessment methods
+15,"web, closed, pretesting, speech, questionnaire",6,2025,Web survey question pretesting
+16,"negative, driven, perceptions, forms, political communication",6,2025,Public opinion and privacy
+18,"political communication, actors, web tracking, highlighting, predictive",3,2025,Online political information seeking
+19,"transformation, immigrants, debates, germany, large scale",1,2025,German unification and transformation
+20,"social media, open science, annotation, goal, trust",8,2025,Open science communication practices
+21,"modeling, factor, valid, highlighting, settings",4,2025,Gender bias in image modeling
+22,"immigration, vote choice, individual level, right wing, news articles",6,2025,National identity and right-wing voting
+23,"labor, levels, preference, crises, european union eu",6,2025,European welfare attitudes and crises
+24,"performance, natural language processing, democracy, search engines, gender",4,2025,Search engines in political science
+26,"discourse, polarization, social media, election, dynamics",5,2025,Political discourse on social media
+27,"similarity, benchmark, networks, italy, cross national",7,2025,Family network structure analysis
+28,"distribution, machine learning, selection, outperforms, cognitive",5,2025,Survey pretesting and measurement quality
+-1,"climate change, policy, crises, germany, evolution",1,2026,
+0,"misinformation, effects, german, preregistered, variance",2,2026,Migration and integration in Germany

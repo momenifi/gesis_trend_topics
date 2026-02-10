@@ -1,4 +1,4 @@
-Topic,Count,Name,CustomName,CustomLabel,LLM_Label
--1,7,-1_prevalence_east west_hpv16_vaccine,"prevalence, east west, hpv16, vaccine, new federal","prevalence, east west, hpv16, vaccine, new federal",
-0,35,0_life_uncertainty_germany_prevalence,"life, uncertainty, germany, prevalence, job insecurity","life, uncertainty, germany, prevalence, job insecurity",Job Insecurity and Health Outcomes
-1,13,1_snot 22_neck_statistical evidence_cup,"snot 22, neck, statistical evidence, cup, postoperative","snot 22, neck, statistical evidence, cup, postoperative",Postoperative Nasal Secretion Analysis
+Topic,Count,Name,CustomName,CustomLabel,LLM_Label,LLM_Labels
+-1,10,-1_sport_snot_chronic rhinosinusitis_type crssnp,"sport, snot, chronic rhinosinusitis, type crssnp, tissue","sport, snot, chronic rhinosinusitis, type crssnp, tissue",,
+0,33,0_german_uncertainty_childhood_psychotherapy,"german, uncertainty, childhood, psychotherapy, life expectancy","german, uncertainty, childhood, psychotherapy, life expectancy",Psychological traits and uncertainty,Psychological traits and uncertainty; Childhood experiences in Germany; Cross-cultural personality assessment
+1,16,1_neck_baymedr_cup_prescreening,"neck, baymedr, cup, prescreening, equivalence non inferiority","neck, baymedr, cup, prescreening, equivalence non inferiority",Bayesian analysis in clinical trials,Bayesian analysis in clinical trials; Head and neck cancer diagnostics; Equivalence and non-inferiority studies

@@ -1,0 +1,2 @@
+Parent_ID,Parent_Name,Topics,Child_Left_ID,Child_Left_Name,Child_Right_ID,Child_Right_Name,Distance,LLM_Label,LLM_Labels
+2,german_prevalence_age_personality_neck,"[0, 1]",0,german_uncertainty_childhood_psychotherapy_life expectancy,1,neck_baymedr_cup_prescreening_equivalence non inferiority,0.8819234239459057,Bayesian methods in clinical research,Bayesian methods in clinical research; Uncertainty and decision-making in health; Diagnosis and outcomes in head and neck cancer

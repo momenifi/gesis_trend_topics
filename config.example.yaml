@@ -1,6 +1,9 @@
 data_path: abstracts.csv
 output_base_dir: outputs_by_cluster
 embedding_model: paraphrase-multilingual-MiniLM-L12-v2
+title_column: title
+keyword_column: keyword
+keyword_weight: 2
 min_cluster_size: 10
 n_components: 5
 n_neighbors: 15

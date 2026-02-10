@@ -1,0 +1,150 @@
+Topic,Words,Frequency,Timestamp,LLM_Label
+-1,"sampling, germany, google, left right, multilingual",56,2023,
+0,"switching, candidates, 2021, parties, german federal election",18,2023,German electoral attitudes and parties
+1,"distributed, dimension, personality traits, correlation, elections",20,2023,Survey data harmonization methods
+2,"covid 19 pandemic, households, search engines, testing, cluster",6,2023,COVID-19 social science surveys
+3,"publishing, citation, machine learning, correlation, uncertainty",11,2023,Social media and scientific communication
+4,"large, knowledge graph, language models llms, named entity recognition, task",13,2023,Knowledge Extraction with Language Models
+5,"radical, personality traits, populist, trust, voting",11,2023,Right-wing populism and personality
+6,"open science, similarity, higher education, package, computational social",10,2023,Computational reproducibility in social science
+7,"graph, classification, network, sentence, consensus",12,2023,Graph neural network methods
+8,"uncertainty, adaptation, german language, sex, cross",13,2023,Uncertainty and curiosity in cognition
+9,"inclusion, measurement invariance, behavioral, social media, frameworks",12,2023,Digital data quality in social sciences
+10,"knowledge graphs, semantic web, pipeline, generic, machine learning",12,2023,Knowledge Graphs and Machine Learning
+11,"germany, welfare, families, differences, negative",8,2023,Parental socioeconomic inequality in Germany
+12,"personality, vocational, diversity, social networks, immigration",6,2023,Personality and vocational outcomes
+13,"closed, cognitive, labels, coding, german language",7,2023,Cognitive pretesting in web surveys
+14,"recruitment, probability based, mail, mixed mode, online panel",17,2023,Probability-based online panel recruitment
+15,"public opinion, hypothesis, representation, policymakers, registration",6,2023,Public opinion and political advertising
+16,"crisis, refugees, germany, differences, social media",2,2023,Political communication and misinformation
+17,"learning, adolescents, filter, role, predictors",7,2023,Adolescent literacy and inequalities
+19,"cases, management, digital trace, collection, sharing",3,2023,Digital trace data sharing
+20,"children, risk, immigration, 19 pandemic, european countries",7,2023,COVID-19 social risks and well-being
+21,"fact checking, share, prediction, landscape, grained",10,2023,Online fact-checking tasks landscape
+22,"speech, discrimination, detection, sheds light, robustness",8,2023,Bias and discrimination in speech
+24,"gaps, training, domain, time consuming, robustness",4,2023,Gender gaps in blockchain domain
+25,"population, waves, multilevel, probability based, mixed mode panel",7,2023,Probability-based panel survey methodology
+26,"companies, participation, households, online panel, response behavior",10,2023,Online survey recruitment strategies
+27,"team, multilingual, questionnaire, version, comparability",7,2023,Multilingual questionnaire translation methods
+28,"nonresponse, machine learning, waves, mixed mode panel, building",8,2023,Machine learning for panel nonresponse
+29,"political knowledge, detect, german internet panel, response behavior, combined",5,2023,Online political knowledge measurement
+30,"populations, crises, welfare, heterogeneity, europe",6,2023,European welfare attitudes and crises
+31,"labour, migration, couples, differences, germany",9,2023,Labour market integration in Germany
+32,"infrastructure, knowledge graphs, artificial intelligence, disciplinary, cross",6,2023,Heterogeneous Knowledge Graphs in Science
+33,"discourse, user, based model, fact checking, productivity",1,2023,Multilingual fact-checking and discourse analysis
+34,"war, transformation, map, german, temporal",2,2023,German unification and transformation
+35,"large scale, consensus, cross cultural, distinct, immigration",3,2023,Far-right voting and national identity
+36,"fake, deep learning, f1 score, media, named entity recognition",2,2023,Fake news detection in Arabic
+37,"machine learning, errors, automated content, perception, validation",7,2023,Validation of machine learning annotations
+38,"graph, prediction, preferences, natural language, shift",7,2023,Graph-based recommendation with NLP
+39,"web, generative ai, behaviors, time, training",7,2023,Web usage behavior patterns
+40,"application, inference, factor, multilevel, journalism",3,2023,Bayesian equivalence testing methods
+41,"machine learning, release, crucial role, based model, text",5,2023,Scholarly entity extraction methods
+42,"workshop, retrieval, series, https, natural language processing",5,2023,Scholarly Information Retrieval Workshops
+45,"privacy, journalism, religious, minority, automated content",6,2023,Media trust and privacy perspectives
+46,"language models, training, zero, computer, domains",6,2023,Language models for code tasks
+47,"partner, panel, response behavior, german family, privacy",4,2023,panel survey methodology
+48,"web tracking, orientation, women, germany, questionnaire",3,2023,Digital Behavior Profiles in Germany
+49,"political science, open science, 2021, german federal election, engines",2,2023,Search engines in political science
+-1,"conversational, search, moderation, political, large language",125,2024,
+0,"attitudes, multilevel, migration, german federal election, 2021",10,2024,German electoral attitudes and parties
+1,"elections, qualitative, database, political attitudes, 2019",9,2024,Survey data harmonization methods
+2,"covid 19 pandemic, trust, social science, measurement invariance, alignment",20,2024,COVID-19 social science surveys
+3,"generic, corpus, named entity recognition, framework, training",8,2024,Social media and scientific communication
+4,"extraction, llms, large language models, knowledge graph, named entity recognition",16,2024,Knowledge Extraction with Language Models
+5,"populist, voting behavior, differences, east west, germany",11,2024,Right-wing populism and personality
+6,"computational social science, open, functions, similarity, real world",9,2024,Computational reproducibility in social science
+7,"network, graphs, persistent, real world, interplay",4,2024,Graph neural network methods
+8,"uncertainty, psychometric, comparability, opportunities, countries",9,2024,Uncertainty and curiosity in cognition
+9,"facebook, social science, measurement, frameworks, browsing",7,2024,Digital data quality in social sciences
+10,"detection, knowledge graphs, argument mining, similarity, fake",13,2024,Knowledge Graphs and Machine Learning
+11,"germany, primary, unemployment, fixed effects, families",9,2024,Parental socioeconomic inequality in Germany
+12,"personality, engagement, matching, vocational, scales",14,2024,Personality and vocational outcomes
+13,"visual, pretesting, modes, questionnaire, closed",8,2024,Cognitive pretesting in web surveys
+14,"recruitment, affects, probability based, german internet panel, mixed mode",6,2024,Probability-based online panel recruitment
+15,"privacy, campaigns, cross, public opinion, vote choice",10,2024,Public opinion and political advertising
+16,"privacy, russian, hybrid, democratic, media posts",12,2024,Political communication and misinformation
+17,"literacy, adolescents, germany, minorities, inequalities",2,2024,Adolescent literacy and inequalities
+18,"cohorts, acceptance, younger, german, driving",9,2024,Gender attitudes in younger cohorts
+19,"digital trace, linkage, privacy, facebook, discipline",12,2024,Digital trace data sharing
+20,"risk, sharing, life satisfaction, 19 pandemic, germany",8,2024,COVID-19 social risks and well-being
+21,"fact checking, biases, landscape, knowledge graphs, transformer based",4,2024,Online fact-checking tasks landscape
+22,"computer science, career, discrimination, growth, women men",6,2024,Bias and discrimination in speech
+23,"violence, mobility, higher education, inequalities, europe",5,2024,Gender-based violence in academia
+24,"gaps, skills, women, social media, underrepresented",8,2024,Gender gaps in blockchain domain
+25,"probability based, experience, different levels, waves, effects panel",4,2024,Probability-based panel survey methodology
+26,"migration, questionnaire, type, general population, crucial role",1,2024,Online survey recruitment strategies
+27,"split, questionnaire, machine, team, languages",8,2024,Multilingual questionnaire translation methods
+28,"item nonresponse, memory, machine learning, panel, survival",6,2024,Machine learning for panel nonresponse
+29,"content, political attitudes, web tracking, european union, tweets",8,2024,Online political knowledge measurement
+30,"class, regional, factorial, unemployment, long term",6,2024,European welfare attitudes and crises
+31,"labour, differences, germany, discrimination, migration",5,2024,Labour market integration in Germany
+32,"variable, knowledge graph, social media, pipelines, named entity recognition",5,2024,Heterogeneous Knowledge Graphs in Science
+33,"interaction, multilingual, communities, knowledge graphs, journalism",9,2024,Multilingual fact-checking and discourse analysis
+34,"chapter, processes, east west germany, changes, political attitudes",12,2024,German unification and transformation
+35,"national, elite, parties, immigration, half",5,2024,Far-right voting and national identity
+36,"fake, news, named entity recognition, deep learning, machine",7,2024,Fake news detection in Arabic
+37,"classification, quality indicators, machine learning, text, pretesting",6,2024,Validation of machine learning annotations
+38,"named entity recognition, recommendation, natural language processing, graph, scientific community",6,2024,Graph-based recommendation with NLP
+39,"web, behavioral, mass, satisfaction, past",5,2024,Web usage behavior patterns
+40,"strength, food, randomized, factor, efficacy",1,2024,Bayesian equivalence testing methods
+41,"learning models, entities, energy, citizenship, task",8,2024,Scholarly entity extraction methods
+42,"workshop, retrieval, natural language processing, 2024, communities",6,2024,Scholarly Information Retrieval Workshops
+43,"interviewer, mixed mode, face, self administered, rates",11,2024,concurrent mixed-mode survey designs
+44,"real, computational social science, web tracking, little attention, record",8,2024,Online reading behavior measurement
+45,"media, credibility, perspective, conducted germany, higher levels",5,2024,Media trust and privacy perspectives
+47,"mixed mode, questionnaire, face, measurement invariance, difference",3,2024,panel survey methodology
+48,"profile, competence, heterogeneous, health related, search engines",6,2024,Digital Behavior Profiles in Germany
+49,"search engines, engines, election, 2020, diversity",6,2024,Search engines in political science
+50,"competition, party, democracies, germany, election",4,2024,Democratic competition in Germany
+51,"tweets, argument mining, network, polarization, classifier",7,2024,Twitter argument mining and polarization
+-1,"polarization, german, reliability, government, refugees",72,2025,
+0,"migration, election, effects, germany, facebook",14,2025,German electoral attitudes and parties
+1,"europe, multi level, time, electoral, life satisfaction",11,2025,Survey data harmonization methods
+2,"pandemic, cohort, network, uncertainty, education",10,2025,COVID-19 social science surveys
+3,"social media, metadata, scientific publications, uncertainty, actors",16,2025,Social media and scientific communication
+4,"language models llms, conversational, google, difference, extraction",3,2025,Knowledge Extraction with Language Models
+5,"populist, multilevel, right wing, climate, perception",11,2025,Right-wing populism and personality
+6,"similarity, benchmark, open science, computational social science, behavioural",13,2025,Computational reproducibility in social science
+7,"network, family, optimization, linking, preference",13,2025,Graph neural network methods
+8,"artificial intelligence, past, scenarios, context, belief",6,2025,Uncertainty and curiosity in cognition
+9,"facebook, behavioral, platforms, smartphones, standards",9,2025,Digital data quality in social sciences
+10,"face, heterogeneous, metadata, machine learning, knowledge graphs",3,2025,Knowledge Graphs and Machine Learning
+11,"children, germany, refugees, integration, socioeconomic",11,2025,Parental socioeconomic inequality in Germany
+12,"personality traits, associations, school, openness, effects",8,2025,Personality and vocational outcomes
+13,"web, label, closed, pretesting, questionnaire",8,2025,Cognitive pretesting in web surveys
+15,"effects, driven, messages, perceptions, political communication",6,2025,Public opinion and political advertising
+16,"coverage, climate, political parties, social media, misinformation",8,2025,Political communication and misinformation
+17,"adolescents, literacy, inequalities, emotional, categories",12,2025,Adolescent literacy and inequalities
+18,"driving, cross cultural, younger, measurement invariance, vote choice",11,2025,Gender attitudes in younger cohorts
+19,"digital trace, reuse, open science, projects, ethical",5,2025,Digital trace data sharing
+20,"unemployment, health, long term, covid 19 pandemic, european countries",4,2025,COVID-19 social risks and well-being
+21,"fact checking, web, teams, robustness, language models",5,2025,Online fact-checking tasks landscape
+22,"bias, online, speech, gap, detection",4,2025,Bias and discrimination in speech
+23,"violence, europe, higher education, inequalities, staff",13,2025,Gender-based violence in academia
+24,"accuracy, gaps, language models, 75, exploiting",6,2025,Gender gaps in blockchain domain
+25,"inclusion, probability based, mixed mode panel, population, sampled",7,2025,Probability-based panel survey methodology
+26,"testing, response behavior, participate, families, companies",6,2025,Online survey recruitment strategies
+27,"translation, questionnaire, literacy, web, item nonresponse",1,2025,Multilingual questionnaire translation methods
+28,"inference, nonresponse, distribution, trajectories, machine learning",2,2025,Machine learning for panel nonresponse
+29,"political knowledge, web tracking, female, predictive, sociodemographic",3,2025,Online political knowledge measurement
+30,"welfare, multilevel, preferences, vignette experiment, european union",4,2025,European welfare attitudes and crises
+31,"remain, vocational, germany, levels, likelihood",1,2025,Labour market integration in Germany
+32,"heterogeneous, knowledge graphs, extraction, scientific publications, contextual",4,2025,Heterogeneous Knowledge Graphs in Science
+33,"hybrid, journalism, knowledge graphs, fact checking, web",5,2025,Multilingual fact-checking and discourse analysis
+34,"religious, transformation, immigrants, threat, germany",1,2025,German unification and transformation
+35,"immigration, vote choice, individual level, right wing, news articles",6,2025,Far-right voting and national identity
+36,"languages, fake, named entity recognition, low, learning models",5,2025,Fake news detection in Arabic
+39,"memory, smartphones, occupational, temporal, tested",1,2025,Web usage behavior patterns
+40,"binary, primary, regression, performance, machine learning",9,2025,Bayesian equivalence testing methods
+42,"workshop, natural language processing, access, investigated, 2025",2,2025,Scholarly Information Retrieval Workshops
+43,"face, self administered, mixed mode, interviewer, randomly",1,2025,concurrent mixed-mode survey designs
+44,"news, filter, web browsing, correlates, metric",4,2025,Online reading behavior measurement
+46,"language models, benchmarks, training, zero, open source",5,2025,Language models for code tasks
+47,"panel, face, response behavior, probability based, difference",4,2025,panel survey methodology
+48,"digital, cohort, germany, web tracking, aged",2,2025,Digital Behavior Profiles in Germany
+49,"age, natural language processing, engines, reduces, social media platforms",3,2025,Search engines in political science
+50,"democratic, poland, vignette experiment, 2024, dimensions",7,2025,Democratic competition in Germany
+51,"polarization, covid 19, social media platforms, public discourse, argument mining",4,2025,Twitter argument mining and polarization
+-1,"security, misinformation, climate, health related, preregistered",3,2026,
+4,"user, search, language models llms, analysed, partner",2,2026,Knowledge Extraction with Language Models

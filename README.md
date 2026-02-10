@@ -17,6 +17,39 @@ This repository runs the BERTopic pipeline grouped by discipline clusters (SS, C
 
 The outputs are written under `outputs_by_cluster/cluster_<LABEL>/` for each cluster. A combined run over all documents is stored in `outputs_by_cluster/cluster_ALL/`.
 
+## Labeling with LLM
+
+Use the LLM labeling script after topic modeling. If `OPENWEBUI_API_KEY` is set, it will select the best available OpenWebUI model (unless `OPENWEBUI_MODEL` or `--openwebui-model` is provided). If not, it falls back to local Llama.
+
+Environment variables (optional):
+- `OPENWEBUI_API_KEY`
+- `OPENWEBUI_MODEL` (explicit model id)
+- `OPENWEBUI_BASE_URL` (default: `https://ai-openwebui.gesis.org`)
+
+Example parameters used in this project:
+
+```bash
+python label_topics_with_llama_all.py --clusters ALL,CS,SS,BIO,OTHER --n-ctx 8192 --prompt-token-budget 7500
+```
+
+To label hierarchical topics (using abstracts + keywords from the merged subtopics), run:
+
+```bash
+python label_hierarchical_topics_with_llm.py --clusters ALL,CS,SS,BIO,OTHER --use-openwebui
+```
+
+To visualize hierarchical LLM labels as a collapsible tree (plus/minus):
+
+```bash
+python visualize_hierarchy_tree.py --clusters ALL,CS,SS,BIO,OTHER
+```
+
+In the tree, the primary label is shown and additional LLM labels appear on hover.
+
+## Report
+
+A non-technical summary of the topic modeling and LLM labeling process is available in `REPORT.md`.
+
 ## Configuration
 
 You can override runtime settings via a YAML mapping. A ready-to-copy template lives at `config.example.yaml`:

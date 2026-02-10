@@ -1,0 +1,31 @@
+Topic,Count,Name,CustomName,CustomLabel,LLM_Label
+-1,79,-1_energy_political_moderation_network,"energy, political, moderation, network, europe","energy, political, moderation, network, europe",
+0,181,0_germany_migration_differences_personality,"germany, migration, differences, personality, election","germany, migration, differences, personality, election",German Migration Personality Differences
+1,50,1_machine learning_large language models_llms_mining,"machine learning, large language models, llms, mining, errors","machine learning, large language models, llms, mining, errors",LLM Error Detection
+2,43,2_facebook_reliability_web browsing_tracking,"facebook, reliability, web browsing, tracking, life","facebook, reliability, web browsing, tracking, life",Facebook Life Tracking
+3,40,3_political_multilevel_perception_germany,"political, multilevel, perception, germany, trust","political, multilevel, perception, germany, trust",German Multilevel Trust Perception
+4,37,4_polarization_security_misinformation_social media,"polarization, security, misinformation, social media, election","polarization, security, misinformation, social media, election",Social Media Election Polarization
+5,35,5_trust_learning_journalism_measurement,"trust, learning, journalism, measurement, groups","trust, learning, journalism, measurement, groups",Media Trust in Learning Groups
+6,32,6_nonresponse_waves_machine learning_mixed mode panel,"nonresponse, waves, machine learning, mixed mode panel, population","nonresponse, waves, machine learning, mixed mode panel, population",Mixed Mode Panel Nonresponse
+7,31,7_face_sampling_mixed mode_costs,"face, sampling, mixed mode, costs, web","face, sampling, mixed mode, costs, web",Web Face Sampling Costs
+8,31,8_recruitment_online panel_probability based_mixed mode,"recruitment, online panel, probability based, mixed mode, access","recruitment, online panel, probability based, mixed mode, access",Online Panel Recruitment Methods
+9,31,9_government_metadata_channels_recognition,"government, metadata, channels, recognition, energy","government, metadata, channels, recognition, energy",Government Metadata Channels
+10,24,10_covid 19 pandemic_trust_actor_social science,"covid 19 pandemic, trust, actor, social science, hybrid","covid 19 pandemic, trust, actor, social science, hybrid",Covid Trust in Hybrid Actors
+11,23,11_comparability_big_governance_personality traits,"comparability, big, governance, personality traits, level","comparability, big, governance, personality traits, level",Governance Personality Trait Levels
+12,21,12_digital_frameworks_social science_measurement invariance,"digital, frameworks, social science, measurement invariance, error","digital, frameworks, social science, measurement invariance, error",Digital Social Science Metrics
+13,21,13_gender_organizations_europe_inclusion,"gender, organizations, europe, inclusion, measurement","gender, organizations, europe, inclusion, measurement",European Gender Inclusion Metrics
+14,21,14_arguments_quality_mining_language model,"arguments, quality, mining, language model, artificial intelligence","arguments, quality, mining, language model, artificial intelligence",Argument Quality Mining Techniques
+15,21,15_closed_quality_pretesting_coding,"closed, quality, pretesting, coding, interviewing","closed, quality, pretesting, coding, interviewing",Interview Protocol Development
+16,19,16_public opinion_driven_psychology_privacy,"public opinion, driven, psychology, privacy, cross","public opinion, driven, psychology, privacy, cross",Public Opinion Cross-Border Privacy
+17,16,17_split_questionnaire_errors_machine,"split, questionnaire, errors, machine, languages","split, questionnaire, errors, machine, languages",Machine Translation Errors
+18,16,18_content_political attitudes_web tracking_measure,"content, political attitudes, web tracking, measure, tweets","content, political attitudes, web tracking, measure, tweets",Tweet Political Attitudes Measure
+19,15,19_chapter_processes_germany_changes,"chapter, processes, germany, changes, political attitudes","chapter, processes, germany, changes, political attitudes",German Political Attitude Shifts
+20,15,20_open science_social media_publications_training,"open science, social media, publications, training, retrieval","open science, social media, publications, training, retrieval",Open Science Training Platforms
+21,14,21_modeling_detection_correlation_gender,"modeling, detection, correlation, gender, depth","modeling, detection, correlation, gender, depth",Gender Depth Correlation Models
+22,14,22_voting_immigration_media_right wing,"voting, immigration, media, right wing, individual level","voting, immigration, media, right wing, individual level",Right Wing Voting Behavior
+23,13,23_european_governance_crises_attitudes,"european, governance, crises, attitudes, levels","european, governance, crises, attitudes, levels",European Governance Crisis Attitudes
+24,13,24_search engines_performance_open science_political science,"search engines, performance, open science, political science, 2021","search engines, performance, open science, political science, 2021",Search Engine Performance Metrics
+25,13,25_risk_children_immigration_19 pandemic,"risk, children, immigration, 19 pandemic, 2020","risk, children, immigration, 19 pandemic, 2020",Immigrant Children Pandemic Risks
+26,12,26_discourse_social media_polarization_scenarios,"discourse, social media, polarization, scenarios, election","discourse, social media, polarization, scenarios, election",Social Media Polarization Scenarios
+27,11,27_family_network_italy_united states,"family, network, italy, united states, correlation","family, network, italy, united states, correlation",Family Network Correlation Study
+28,10,28_interviewing_performance_pretesting_machine learning,"interviewing, performance, pretesting, machine learning, prevalence","interviewing, performance, pretesting, machine learning, prevalence",Interview Performance Assessment Tool

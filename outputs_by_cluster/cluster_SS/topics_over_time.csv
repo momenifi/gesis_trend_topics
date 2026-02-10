@@ -1,83 +1,88 @@
 Topic,Words,Frequency,Timestamp
--1,"classification, web, election, german, mixed mode",56,2023
-0,"social media, groups, detection, task, pre registered",18,2023
-1,"women, labour, german, migration, predictors",6,2023
-2,"voting, personality traits, trust, germany, performance",17,2023
-3,"sharing, machine learning, high, variables, influencing",14,2023
-4,"machine learning, majority, coding, errors, standards",4,2023
-5,"questions, open ended, growth, measurement invariance, personality",12,2023
-6,"migration, tweets, energy, inequality, europe",11,2023
-7,"waves, response behavior, private, indicators, general population",11,2023
-8,"training, political science, project, cases, monitoring",8,2023
-9,"search engines, covid 19 pandemic, significant differences, russian, public opinion",3,2023
-10,"traits, preregistered, students, engagement, constructs",2,2023
-11,"estimation, training, architecture, machine learning, network",5,2023
-12,"differences, educational, german, migration, inequalities",11,2023
-13,"access, german, decreases, 2020, collaboration",5,2023
-14,"european, heterogeneity, different levels, comparisons, communities",5,2023
-15,"difference, comparability, election, projects, measurement",8,2023
-16,"errors, questionnaire, languages, attributed, starting point",7,2023
-17,"perception, trust, voters, costs, positive effect",2,2023
-18,"participation, google, experiment, probability based, design decisions",10,2023
-19,"political, web, based german, response behavior, reliability",5,2023
-21,"bias, speech, detection, sheds light, ethical",7,2023
-22,"identity, parties, right wing, ethnic, methodological",3,2023
-23,"sampling, self administered, germany, costs, mixed mode",8,2023
-24,"19 pandemic, cross sectional, migration, students, european countries",3,2023
-25,"framework, learning, language models llms, influence, building",3,2023
-26,"authors, countries, access, patterns, increase",8,2023
-27,"incentives, panel, mail, demographic, tested",11,2023
--1,"gender, tasks, web, factor, natural language",59,2024
-0,"social media, political, exposure, trust, predictors",32,2024
-1,"german, federal, attitudes, migrants, interplay",21,2024
-2,"attitudes, political, market, germany, positions",9,2024
-3,"willingness, digital, social science, browsing, gaps",19,2024
-4,"detection, text, performance, machine learning, social media",28,2024
-5,"growth, open ended, web, psychometric, modes",15,2024
-6,"ethnic, selection, employment, benefits, long term",14,2024
-7,"panel, waves, differences, questionnaire, women",14,2024
-8,"trace, web browsing, social sciences, different types, use",12,2024
-9,"19 pandemic, wave, questionnaire, key, social science",18,2024
-10,"engagement, students, personality, matching, countries",15,2024
-11,"frame, identification, coding, models, networks",10,2024
-12,"literacy, age, differences, assessment, personality",3,2024
-13,"german, chapter, changes, political attitudes, scientific",14,2024
-14,"trust, cognitive, political, covid 19 pandemic, individual differences",10,2024
-15,"election, database, qualitative, trust, authors",5,2024
-16,"machine, errors, languages, versions, questionnaires",10,2024
-17,"negative, search engines, engines, voters, attitudes",14,2024
-18,"waves, age, positive effect, gesis panel, fine grained",2,2024
-19,"reliability, search engines, health, political, increasingly used",10,2024
-20,"differences, regional, german, democracies, driving",11,2024
-21,"gender, biased, tools, roles, large language",5,2024
-22,"national, voting, multi level, hold, class",5,2024
-23,"mixed mode, costs, sampling, self administered, age",6,2024
-24,"covid 19 pandemic, attitudes, regional, uk, labour market",10,2024
-25,"framework, llms, advantages, linking, large language models",7,2024
-26,"authors, training, recognition, sentence, methodologies",3,2024
--1,"gender, countries, election, emotional, model fit",26,2025
-0,"social media, exposure, perceptions, waves, election",8,2025
-1,"family, german, cross, differences, united states",18,2025
-2,"political, climate, dimension, european, performance",16,2025
-3,"academic, collection, impact, media, google",5,2025
-4,"detection, age gender, social media, selection, machine",6,2025
-5,"open ended, artificial intelligence, questionnaire, context, nonresponse",9,2025
-6,"governance, levels, european union, literacy, preference",5,2025
-7,"settings, cognitive, selection, effects, inequality",3,2025
-8,"digital trace, principles, coverage, million, fewer",7,2025
-9,"cohort, hybrid, pandemic, network, impacts",4,2025
-10,"integration, students, associations, personality, predictive",5,2025
-11,"network, models, future, components, distribution",6,2025
-12,"adolescents, inequalities, track, emotional, categories",7,2025
-13,"european union, transformation, scholars, linking, opportunities",2,2025
-14,"opposition, lower, responsiveness, randomly assigned, governments",5,2025
-15,"europe, elections, time, variables, multi level",6,2025
-16,"llms, languages, derive recommendations, correlated, artificial intelligence",2,2025
-17,"negative, campaigning, choice, driver, personality",3,2025
-18,"participation, probability, effects, web, german",6,2025
-19,"politicians, search engines, highlighting, predictive, sociodemographic",2,2025
-20,"governments, multilevel, likelihood, resilience, german",5,2025
-21,"minority, empirical evidence, remain, integrating, practitioners",3,2025
-22,"immigration, german longitudinal, voting, threat, news articles",6,2025
-25,"biases, left, authoritarian, language models llms, leverage",2,2025
-26,"efficiency, matching, authors, sentence, language models llms",1,2025
+-1,"mobile, political, children, european, attitudes",15,2023
+0,"election, germany, migration, differences, age",50,2023
+1,"machine learning, accuracy, access, text, language models",16,2023
+2,"cases, reliability, behaviors, tracking, web browsing",12,2023
+3,"party, trust, populist, personality traits, voting behavior",10,2023
+4,"media, candidate, negative, refugee, polarization",7,2023
+5,"privacy, journalism, learning, groups, robustness",21,2023
+6,"nonresponse, waves, machine learning, population, mixed mode panel",15,2023
+7,"sampling, mixed mode, germany, difference, addresses",12,2023
+8,"recruitment, online panel, probability based, mixed mode, quality",23,2023
+9,"types, authors, web, correlation, machine learning",7,2023
+10,"framing, search engines, covid 19 pandemic, beliefs, significant differences",3,2023
+11,"reduction, sampling, big, correlation, personality traits",13,2023
+12,"work, digital, inclusion, measurement invariance, social science",9,2023
+14,"option, assessment, competing, hypotheses, cross cultural",2,2023
+15,"classification, closed, web, german language, interviewing",7,2023
+16,"public opinion, hypothesis, process, policymakers, forms",6,2023
+17,"split, questionnaire, errors, comparability, languages",7,2023
+18,"political, scores, german internet panel, uses, large scale",6,2023
+19,"processes, map, germany, past, heterogeneous",2,2023
+20,"open science, training, institutions, social media, yield",4,2023
+22,"large scale, salience, parties, right wing, cross cultural",3,2023
+23,"european, levels, heterogeneity, communities, comparisons",4,2023
+24,"political science, open science, 2021, german federal election, engines",2,2023
+25,"children, risk, immigration, 19 pandemic, europe",6,2023
+27,"complexity, machine learning, relationships, framework, network",2,2023
+28,"cognitive, pretesting, version, interviews, algorithms",3,2023
+-1,"political, networks, search, natural language, long term",34,2024
+0,"german, engagement, differences, age, migration",65,2024
+1,"large language models, domain, machine learning, llms, parliamentary",27,2024
+2,"facebook, web browsing, tracking, reliability, privacy",20,2024
+3,"political, regional, germany, multilevel, preferences",14,2024
+4,"privacy, journalism, hybrid, russian, election campaigns",13,2024
+5,"media, trust, learning, western, right wing",12,2024
+6,"probability based, nonresponse, waves, gesis panel, different levels",8,2024
+7,"mixed mode, face, web, sampling, wave",14,2024
+8,"recruitment, affects, probability based, german internet panel, mixed mode",7,2024
+9,"energy, pipeline, recognition, news articles, architecture",13,2024
+10,"covid 19 pandemic, trust, social science, key, assessment",14,2024
+11,"governance, comparability, projects, health, trust",5,2024
+12,"social science, digital, linking, position, exposure",4,2024
+13,"contextual, women, impact, diversity, europe",8,2024
+14,"arguments, mining, fine tuning, language model, llms",15,2024
+15,"visual, pretesting, modes, questionnaire, closed",8,2024
+16,"privacy, campaigns, cross national, public opinion, negative",7,2024
+17,"machine, split, questionnaire, errors, german language",9,2024
+18,"political attitudes, tweets, web tracking, exposure, european union",7,2024
+19,"chapter, processes, germany, changes, political attitudes",12,2024
+20,"computational, open science, social media, sharing, authors",3,2024
+21,"detection, real world, gender, depth, biases",10,2024
+22,"national, salience, parties, multi level, immigration",5,2024
+23,"factorial, satisfaction, pandemic, regional, germany",3,2024
+24,"search engines, engines, election, 2020, diversity",7,2024
+25,"risk, sharing, children, 19 pandemic, 2020",7,2024
+26,"social media, case, ideological, smaller, robustness",7,2024
+27,"structural, similarity, networks, real world, growing",2,2024
+28,"wording, quality, factorial, psychometric, algorithms",2,2024
+-1,"energy, europe, election, networks, questionnaires",29,2025
+0,"age, migration, germany, inequalities, vote",64,2025
+1,"computational, text, political, language models llms, biases",7,2025
+2,"reliability, trends, facebook, search engine, sharing",11,2025
+3,"democracy, attitudes, space, climate change, wing",16,2025
+4,"polarization, political, channels, exposure, germany",17,2025
+5,"quality, online, detecting, learning, increasing",2,2025
+6,"inclusion, probability based, mixed mode panel, nonresponse, waves",9,2025
+7,"face, panel, mixed mode, response behavior, probability based",5,2025
+8,"design, recruitment, effectiveness, online panel, stakeholders",1,2025
+9,"government, metadata, channels, academic, actors",11,2025
+10,"students, 19 pandemic, hybrid, network, trust",7,2025
+11,"regional, questionnaire, satisfaction, multi level, comparability",5,2025
+12,"quality, frameworks, social science, behavioral, gaps",8,2025
+13,"diversity, europe, women, interventions, inequalities",13,2025
+14,"artificial intelligence, traits, scenarios, arguments, context",4,2025
+15,"web, closed, pretesting, speech, questionnaire",6,2025
+16,"negative, driven, perceptions, forms, political communication",6,2025
+18,"political communication, actors, web tracking, highlighting, predictive",3,2025
+19,"transformation, immigrants, debates, germany, large scale",1,2025
+20,"social media, open science, annotation, goal, trust",8,2025
+21,"modeling, factor, valid, highlighting, settings",4,2025
+22,"immigration, vote choice, individual level, right wing, news articles",6,2025
+23,"labor, levels, preference, crises, european union eu",6,2025
+24,"performance, natural language processing, democracy, search engines, gender",4,2025
+26,"discourse, polarization, social media, election, dynamics",5,2025
+27,"similarity, benchmark, networks, italy, cross national",7,2025
+28,"distribution, machine learning, selection, outperforms, cognitive",5,2025
+-1,"climate change, policy, crises, germany, evolution",1,2026
+0,"misinformation, effects, german, preregistered, variance",2,2026

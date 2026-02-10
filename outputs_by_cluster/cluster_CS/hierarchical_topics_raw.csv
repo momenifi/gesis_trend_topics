@@ -1,9 +1,7 @@
 Parent_ID,Parent_Name,Topics,Child_Left_ID,Child_Left_Name,Child_Right_ID,Child_Right_Name,Distance
-16,language_graph_domain_tasks_detection,"[0, 1, 2, 3, 4, 5, 6, 7, 8]",11,graph_state art_performance_types_user,15,domain_detection_task_quality_future,0.9404598820246507
-15,domain_detection_task_quality_future,"[0, 1, 2, 3, 5, 7, 8]",14,impact_task_domain_detection_quality,9,topics_impact_training_domain_automated,0.8053003449671129
-14,impact_task_domain_detection_quality,"[0, 2, 3, 5, 8]",8,impact_author_performance_corpus_types,13,semantic_domain_detection_training_low,0.7667859403233
-13,semantic_domain_detection_training_low,"[0, 2, 3, 5]",12,detection_tasks_training_domain_context,3,domain_level_increasing_recent years_resource,0.6889334826495532
-12,detection_tasks_training_domain_context,"[0, 2, 5]",5,quality_search_behavior_key_potential,10,language_tasks_training_domain_accuracy,0.6020945712470284
-11,graph_state art_performance_types_user,"[4, 6]",4,graph_network_state_best_design,6,entities_performance_extraction_state art_graph,0.5536750317590663
-10,language_tasks_training_domain_accuracy,"[0, 2]",2,scientific_extraction_topics_future_intelligence,0,language_training_domain_accuracy_impact,0.5377247756345611
-9,topics_impact_training_domain_automated,"[1, 7]",1,training_domain_topics_automated_increasing,7,online_topics_applications_impact_employed,0.4608777376261155
+12,semantic_domain_impact_knowledge graphs_training,"[0, 1, 2, 3, 4, 5, 6]",10,impact_open_vocabulary_accuracy_future,11,knowledge graphs_domain_retrieval_structure_social media,0.8233431320529223
+11,knowledge graphs_domain_retrieval_structure_social media,"[0, 1, 3, 4, 5]",9,knowledge graphs_llms_social media_large language_training,3,domain_dependency_state art_words_graphs,0.7858579225357255
+10,impact_open_vocabulary_accuracy_future,"[2, 6]",6,impact_reference_sentence_account_community,2,vocabulary_accuracy_automated_training_llms,0.7069228912794022
+9,knowledge graphs_llms_social media_large language_training,"[0, 1, 4, 5]",4,retrieval_impact_trained_context_large language llms,8,detection_knowledge graphs_entity_social media_training,0.6279603245960911
+8,detection_knowledge graphs_entity_social media_training,"[0, 1, 5]",7,generative_tasks_retrieval_social media_impact,1,detection_knowledge graphs_domain_social media_pipeline,0.5817406327430013
+7,generative_tasks_retrieval_social media_impact,"[0, 5]",0,tasks_community_impact_retrieval_social media,5,training_f1 score_large language_llms_retrieval,0.4304640252773496

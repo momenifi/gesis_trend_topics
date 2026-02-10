@@ -1,0 +1,150 @@
+Topic,Words,Frequency,Timestamp,LLM_Label
+-1,"sampling, germany, google, left right, multilingual",56,2023,
+0,"switching, candidates, 2021, parties, german federal election",18,2023,German Election Candidate Attitudes
+1,"distributed, dimension, personality traits, correlation, elections",20,2023,European Party Dimensionality
+2,"covid 19 pandemic, households, search engines, testing, cluster",6,2023,Covid Trust Cohort Dynamics
+3,"publishing, citation, machine learning, correlation, uncertainty",11,2023,Social Media Publication Uncertainty
+4,"large, knowledge graph, language models llms, named entity recognition, task",13,2023,Knowledge Graph Extraction Performance
+5,"radical, personality traits, populist, trust, voting",11,2023,Populist Right Wing Voting Behavior
+6,"open science, similarity, higher education, package, computational social",10,2023,Open Science Package Training
+7,"graph, classification, network, sentence, consensus",12,2023,Graph Family Consistency
+8,"uncertainty, adaptation, german language, sex, cross",13,2023,AI-Driven Uncertainty Analysis
+9,"inclusion, measurement invariance, behavioral, social media, frameworks",12,2023,Facebook Social Inclusion Metrics
+10,"knowledge graphs, semantic web, pipeline, generic, machine learning",12,2023,Knowledge Graph Argumentation Pipeline
+11,"germany, welfare, families, differences, negative",8,2023,Parental Socioeconomic Disparities
+12,"personality, vocational, diversity, social networks, immigration",6,2023,Personality Vocational Matching Outcomes
+13,"closed, cognitive, labels, coding, german language",7,2023,Cognitive Label Loss Coding
+14,"recruitment, probability based, mail, mixed mode, online panel",17,2023,Probability Sampling Methods
+15,"public opinion, hypothesis, representation, policymakers, registration",6,2023,Global Ad Privacy Concerns
+16,"crisis, refugees, germany, differences, social media",2,2023,Climate Misinformation on Social Media
+17,"learning, adolescents, filter, role, predictors",7,2023,Adolescent Emotional Literacy Gaps
+19,"cases, management, digital trace, collection, sharing",3,2023,Digital Trace Sharing Networks
+20,"children, risk, immigration, 19 pandemic, european countries",7,2023,Child Immigration Risk Factors
+21,"fact checking, share, prediction, landscape, grained",10,2023,Online Fact Checking Landscape
+22,"speech, discrimination, detection, sheds light, robustness",8,2023,Speech Cohort Career Bias
+24,"gaps, training, domain, time consuming, robustness",4,2023,Language Model Training Gaps
+25,"population, waves, multilevel, probability based, mixed mode panel",7,2023,Probability Based Panel Design
+26,"companies, participation, households, online panel, response behavior",10,2023,Online Panel Response Behavior
+27,"team, multilingual, questionnaire, version, comparability",7,2023,Multilingual Machine Error Questionnaire
+28,"nonresponse, machine learning, waves, mixed mode panel, building",8,2023,Machine Learning Panel Nonresponse
+29,"political knowledge, detect, german internet panel, response behavior, combined",5,2023,EU Immigration Web Monitoring
+30,"populations, crises, welfare, heterogeneity, europe",6,2023,European Multilevel Welfare Crises
+31,"labour, migration, couples, differences, germany",9,2023,German Labour Migration Patterns
+32,"infrastructure, knowledge graphs, artificial intelligence, disciplinary, cross",6,2023,Heterogeneous Knowledge Graphs in AI
+33,"discourse, user, based model, fact checking, productivity",1,2023,Multilingual Hybrid Fact Checking
+34,"war, transformation, map, german, temporal",2,2023,East German Mental Changes
+35,"large scale, consensus, cross cultural, distinct, immigration",3,2023,Right Wing Voting Behavior
+36,"fake, deep learning, f1 score, media, named entity recognition",2,2023,Fake News Detection Systems
+37,"machine learning, errors, automated content, perception, validation",7,2023,Machine Learning Annotation Strategies
+38,"graph, prediction, preferences, natural language, shift",7,2023,User Recommendation Systems
+39,"web, generative ai, behaviors, time, training",7,2023,Web Behavioral Satisfaction Dynamics
+40,"application, inference, factor, multilevel, journalism",3,2023,Package Performance Metrics
+41,"machine learning, release, crucial role, based model, text",5,2023,Energy-Based Learning Models
+42,"workshop, retrieval, series, https, natural language processing",5,2023,Digital Event Retrieval Workshop
+45,"privacy, journalism, religious, minority, automated content",6,2023,Media Credibility and Ethnic Bias
+46,"language models, training, zero, computer, domains",6,2023,Zero-Shot Language Benchmarks
+47,"partner, panel, response behavior, german family, privacy",4,2023,Labor Attitudes Panel Study
+48,"web tracking, orientation, women, germany, questionnaire",3,2023,German Health Web Profiles
+49,"political science, open science, 2021, german federal election, engines",2,2023,Search Engine Open Science
+-1,"conversational, search, moderation, political, large language",125,2024,
+0,"attitudes, multilevel, migration, german federal election, 2021",10,2024,German Election Candidate Attitudes
+1,"elections, qualitative, database, political attitudes, 2019",9,2024,European Party Dimensionality
+2,"covid 19 pandemic, trust, social science, measurement invariance, alignment",20,2024,Covid Trust Cohort Dynamics
+3,"generic, corpus, named entity recognition, framework, training",8,2024,Social Media Publication Uncertainty
+4,"extraction, llms, large language models, knowledge graph, named entity recognition",16,2024,Knowledge Graph Extraction Performance
+5,"populist, voting behavior, differences, east west, germany",11,2024,Populist Right Wing Voting Behavior
+6,"computational social science, open, functions, similarity, real world",9,2024,Open Science Package Training
+7,"network, graphs, persistent, real world, interplay",4,2024,Graph Family Consistency
+8,"uncertainty, psychometric, comparability, opportunities, countries",9,2024,AI-Driven Uncertainty Analysis
+9,"facebook, social science, measurement, frameworks, browsing",7,2024,Facebook Social Inclusion Metrics
+10,"detection, knowledge graphs, argument mining, similarity, fake",13,2024,Knowledge Graph Argumentation Pipeline
+11,"germany, primary, unemployment, fixed effects, families",9,2024,Parental Socioeconomic Disparities
+12,"personality, engagement, matching, vocational, scales",14,2024,Personality Vocational Matching Outcomes
+13,"visual, pretesting, modes, questionnaire, closed",8,2024,Cognitive Label Loss Coding
+14,"recruitment, affects, probability based, german internet panel, mixed mode",6,2024,Probability Sampling Methods
+15,"privacy, campaigns, cross, public opinion, vote choice",10,2024,Global Ad Privacy Concerns
+16,"privacy, russian, hybrid, democratic, media posts",12,2024,Climate Misinformation on Social Media
+17,"literacy, adolescents, germany, minorities, inequalities",2,2024,Adolescent Emotional Literacy Gaps
+18,"cohorts, acceptance, younger, german, driving",9,2024,German Younger Cohort Acceptance
+19,"digital trace, linkage, privacy, facebook, discipline",12,2024,Digital Trace Sharing Networks
+20,"risk, sharing, life satisfaction, 19 pandemic, germany",8,2024,Child Immigration Risk Factors
+21,"fact checking, biases, landscape, knowledge graphs, transformer based",4,2024,Online Fact Checking Landscape
+22,"computer science, career, discrimination, growth, women men",6,2024,Speech Cohort Career Bias
+23,"violence, mobility, higher education, inequalities, europe",5,2024,European Women's Higher Education Inequality
+24,"gaps, skills, women, social media, underrepresented",8,2024,Language Model Training Gaps
+25,"probability based, experience, different levels, waves, effects panel",4,2024,Probability Based Panel Design
+26,"migration, questionnaire, type, general population, crucial role",1,2024,Online Panel Response Behavior
+27,"split, questionnaire, machine, team, languages",8,2024,Multilingual Machine Error Questionnaire
+28,"item nonresponse, memory, machine learning, panel, survival",6,2024,Machine Learning Panel Nonresponse
+29,"content, political attitudes, web tracking, european union, tweets",8,2024,EU Immigration Web Monitoring
+30,"class, regional, factorial, unemployment, long term",6,2024,European Multilevel Welfare Crises
+31,"labour, differences, germany, discrimination, migration",5,2024,German Labour Migration Patterns
+32,"variable, knowledge graph, social media, pipelines, named entity recognition",5,2024,Heterogeneous Knowledge Graphs in AI
+33,"interaction, multilingual, communities, knowledge graphs, journalism",9,2024,Multilingual Hybrid Fact Checking
+34,"chapter, processes, east west germany, changes, political attitudes",12,2024,East German Mental Changes
+35,"national, elite, parties, immigration, half",5,2024,Right Wing Voting Behavior
+36,"fake, news, named entity recognition, deep learning, machine",7,2024,Fake News Detection Systems
+37,"classification, quality indicators, machine learning, text, pretesting",6,2024,Machine Learning Annotation Strategies
+38,"named entity recognition, recommendation, natural language processing, graph, scientific community",6,2024,User Recommendation Systems
+39,"web, behavioral, mass, satisfaction, past",5,2024,Web Behavioral Satisfaction Dynamics
+40,"strength, food, randomized, factor, efficacy",1,2024,Package Performance Metrics
+41,"learning models, entities, energy, citizenship, task",8,2024,Energy-Based Learning Models
+42,"workshop, retrieval, natural language processing, 2024, communities",6,2024,Digital Event Retrieval Workshop
+43,"interviewer, mixed mode, face, self administered, rates",11,2024,Mixed Mode Interview Rates
+44,"real, computational social science, web tracking, little attention, record",8,2024,Web Exposure Time Tracking
+45,"media, credibility, perspective, conducted germany, higher levels",5,2024,Media Credibility and Ethnic Bias
+47,"mixed mode, questionnaire, face, measurement invariance, difference",3,2024,Labor Attitudes Panel Study
+48,"profile, competence, heterogeneous, health related, search engines",6,2024,German Health Web Profiles
+49,"search engines, engines, election, 2020, diversity",6,2024,Search Engine Open Science
+50,"competition, party, democracies, germany, election",4,2024,German Socioeconomic Competition
+51,"tweets, argument mining, network, polarization, classifier",7,2024,Tweet Polarization Analysis Network
+-1,"polarization, german, reliability, government, refugees",72,2025,
+0,"migration, election, effects, germany, facebook",14,2025,German Election Candidate Attitudes
+1,"europe, multi level, time, electoral, life satisfaction",11,2025,European Party Dimensionality
+2,"pandemic, cohort, network, uncertainty, education",10,2025,Covid Trust Cohort Dynamics
+3,"social media, metadata, scientific publications, uncertainty, actors",16,2025,Social Media Publication Uncertainty
+4,"language models llms, conversational, google, difference, extraction",3,2025,Knowledge Graph Extraction Performance
+5,"populist, multilevel, right wing, climate, perception",11,2025,Populist Right Wing Voting Behavior
+6,"similarity, benchmark, open science, computational social science, behavioural",13,2025,Open Science Package Training
+7,"network, family, optimization, linking, preference",13,2025,Graph Family Consistency
+8,"artificial intelligence, past, scenarios, context, belief",6,2025,AI-Driven Uncertainty Analysis
+9,"facebook, behavioral, platforms, smartphones, standards",9,2025,Facebook Social Inclusion Metrics
+10,"face, heterogeneous, metadata, machine learning, knowledge graphs",3,2025,Knowledge Graph Argumentation Pipeline
+11,"children, germany, refugees, integration, socioeconomic",11,2025,Parental Socioeconomic Disparities
+12,"personality traits, associations, school, openness, effects",8,2025,Personality Vocational Matching Outcomes
+13,"web, label, closed, pretesting, questionnaire",8,2025,Cognitive Label Loss Coding
+15,"effects, driven, messages, perceptions, political communication",6,2025,Global Ad Privacy Concerns
+16,"coverage, climate, political parties, social media, misinformation",8,2025,Climate Misinformation on Social Media
+17,"adolescents, literacy, inequalities, emotional, categories",12,2025,Adolescent Emotional Literacy Gaps
+18,"driving, cross cultural, younger, measurement invariance, vote choice",11,2025,German Younger Cohort Acceptance
+19,"digital trace, reuse, open science, projects, ethical",5,2025,Digital Trace Sharing Networks
+20,"unemployment, health, long term, covid 19 pandemic, european countries",4,2025,Child Immigration Risk Factors
+21,"fact checking, web, teams, robustness, language models",5,2025,Online Fact Checking Landscape
+22,"bias, online, speech, gap, detection",4,2025,Speech Cohort Career Bias
+23,"violence, europe, higher education, inequalities, staff",13,2025,European Women's Higher Education Inequality
+24,"accuracy, gaps, language models, 75, exploiting",6,2025,Language Model Training Gaps
+25,"inclusion, probability based, mixed mode panel, population, sampled",7,2025,Probability Based Panel Design
+26,"testing, response behavior, participate, families, companies",6,2025,Online Panel Response Behavior
+27,"translation, questionnaire, literacy, web, item nonresponse",1,2025,Multilingual Machine Error Questionnaire
+28,"inference, nonresponse, distribution, trajectories, machine learning",2,2025,Machine Learning Panel Nonresponse
+29,"political knowledge, web tracking, female, predictive, sociodemographic",3,2025,EU Immigration Web Monitoring
+30,"welfare, multilevel, preferences, vignette experiment, european union",4,2025,European Multilevel Welfare Crises
+31,"remain, vocational, germany, levels, likelihood",1,2025,German Labour Migration Patterns
+32,"heterogeneous, knowledge graphs, extraction, scientific publications, contextual",4,2025,Heterogeneous Knowledge Graphs in AI
+33,"hybrid, journalism, knowledge graphs, fact checking, web",5,2025,Multilingual Hybrid Fact Checking
+34,"religious, transformation, immigrants, threat, germany",1,2025,East German Mental Changes
+35,"immigration, vote choice, individual level, right wing, news articles",6,2025,Right Wing Voting Behavior
+36,"languages, fake, named entity recognition, low, learning models",5,2025,Fake News Detection Systems
+39,"memory, smartphones, occupational, temporal, tested",1,2025,Web Behavioral Satisfaction Dynamics
+40,"binary, primary, regression, performance, machine learning",9,2025,Package Performance Metrics
+42,"workshop, natural language processing, access, investigated, 2025",2,2025,Digital Event Retrieval Workshop
+43,"face, self administered, mixed mode, interviewer, randomly",1,2025,Mixed Mode Interview Rates
+44,"news, filter, web browsing, correlates, metric",4,2025,Web Exposure Time Tracking
+46,"language models, benchmarks, training, zero, open source",5,2025,Zero-Shot Language Benchmarks
+47,"panel, face, response behavior, probability based, difference",4,2025,Labor Attitudes Panel Study
+48,"digital, cohort, germany, web tracking, aged",2,2025,German Health Web Profiles
+49,"age, natural language processing, engines, reduces, social media platforms",3,2025,Search Engine Open Science
+50,"democratic, poland, vignette experiment, 2024, dimensions",7,2025,German Socioeconomic Competition
+51,"polarization, covid 19, social media platforms, public discourse, argument mining",4,2025,Tweet Polarization Analysis Network
+-1,"security, misinformation, climate, health related, preregistered",3,2026,
+4,"user, search, language models llms, analysed, partner",2,2026,Knowledge Graph Extraction Performance
