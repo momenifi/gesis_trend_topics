@@ -79,6 +79,10 @@ Hierarchical topics are higher-level merges of multiple leaf topics. We label th
 
 This produces broader labels that describe the overall theme of a hierarchy node.
 
+Notes:
+- Each hierarchy node has a primary label (`LLM_Label`) and optional additional labels (`LLM_Labels`).
+- In the collapsible tree visualization (`hierarchical_topics_tree.html`), the primary label is shown in the node and additional labels appear on mouse hover.
+
 ## Stopwords (How We Handle Them)
 Stopwords are common words that don’t help distinguish topics (e.g., “study”, “results”, “data”). We remove them to improve topic quality.
 
