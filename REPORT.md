@@ -106,7 +106,8 @@ For each discipline cluster (e.g., `outputs_by_cluster/cluster_SS/`):
 - `docs_with_topics_and_macro_topics.csv` is the full document export with topic and macro-topic assignments.
 - `hierarchical_topics_raw.csv` contains the hierarchy tree used for the topic dendrogram.
 - `hierarchical_topics_labeled.csv` adds LLM labels for each hierarchy node (`LLM_Label`, `LLM_Labels`).
-- `hierarchical_topics_tree.html` is a collapsible tree visualization with LLM labels; hover shows additional labels.
+- `hierarchical_topics_tree_llm.html` is a collapsible tree visualization with LLM labels; hover shows additional labels.
+- `hierarchical_topics_tree_raw.html` is the same visualization using raw/BERTopic labels (no LLM).
 - `topics_hierarchy.html` and `hierarchical_documents.html` are interactive visualizations (when generated).
 
 In the visualization output folder (e.g., `outputs_viz/`):

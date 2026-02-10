@@ -21,6 +21,12 @@ def parse_args():
     parser.add_argument("--width", type=int, default=1800, help="SVG width")
     parser.add_argument("--wrap-width", type=int, default=180, help="Max label width in pixels")
     parser.add_argument("--line-height", type=int, default=14, help="Line height for wrapped labels")
+    parser.add_argument(
+        "--label-source",
+        choices=["llm", "raw", "both"],
+        default="llm",
+        help="Use LLM labels, raw/BERTopic labels, or generate both.",
+    )
     return parser.parse_args()
 
 
@@ -37,17 +43,30 @@ def parse_topics_list(value) -> list[int]:
     return []
 
 
-def load_topic_labels(cluster_dir: Path) -> tuple[dict[int, str], dict[int, int], dict[int, str]]:
+def load_topic_labels(
+    cluster_dir: Path,
+    label_source: str,
+) -> tuple[dict[int, str], dict[int, int], dict[int, str]]:
     labeled = cluster_dir / "topic_info_labeled.csv"
     unlabeled = cluster_dir / "topic_info.csv"
-    if labeled.exists():
-        df = pd.read_csv(labeled)
-        label_cols = ["LLM_Label", "CustomLabel", "CustomName", "Name"]
-    elif unlabeled.exists():
-        df = pd.read_csv(unlabeled)
-        label_cols = ["CustomLabel", "CustomName", "Name"]
+    if label_source == "llm":
+        if labeled.exists():
+            df = pd.read_csv(labeled)
+            label_cols = ["LLM_Label", "CustomLabel", "CustomName", "Name"]
+        elif unlabeled.exists():
+            df = pd.read_csv(unlabeled)
+            label_cols = ["CustomLabel", "CustomName", "Name"]
+        else:
+            return {}, {}, {}
     else:
-        return {}, {}, {}
+        if unlabeled.exists():
+            df = pd.read_csv(unlabeled)
+            label_cols = ["CustomLabel", "CustomName", "Name"]
+        elif labeled.exists():
+            df = pd.read_csv(labeled)
+            label_cols = ["CustomLabel", "CustomName", "Name"]
+        else:
+            return {}, {}, {}
 
     label_map = {}
     count_map = {}
@@ -61,15 +80,18 @@ def load_topic_labels(cluster_dir: Path) -> tuple[dict[int, str], dict[int, int]
             if isinstance(value, str) and value.strip():
                 label_map[int(topic_id)] = value.strip()
                 break
-        llm_all = row.get("LLM_Labels", "")
-        if isinstance(llm_all, str) and llm_all.strip():
-            llm_labels_map[int(topic_id)] = llm_all.strip()
+        if label_source == "llm":
+            llm_all = row.get("LLM_Labels", "")
+            if isinstance(llm_all, str) and llm_all.strip():
+                llm_labels_map[int(topic_id)] = llm_all.strip()
         if "Count" in row and not pd.isna(row.get("Count")):
             count_map[int(topic_id)] = int(row.get("Count"))
     return label_map, count_map, llm_labels_map
 
 
-def load_hier_labels(cluster_dir: Path) -> dict[int, dict[str, str]]:
+def load_hier_labels(cluster_dir: Path, label_source: str) -> dict[int, dict[str, str]]:
+    if label_source != "llm":
+        return {}
     labeled = cluster_dir / "hierarchical_topics_labeled.csv"
     if not labeled.exists():
         return {}
@@ -97,6 +119,7 @@ def build_tree(
     max_label_length: int,
     wrap_chars: int,
     topic_llm_labels: dict[int, str],
+    label_source: str,
 ):
     parent_rows = {}
     parent_ids = set()
@@ -141,13 +164,16 @@ def build_tree(
                 current = wlen
         return max(1, lines)
 
-    def node_label(node_id: int) -> tuple[str, int | None, str]:
-        label_entry = hier_labels.get(node_id) or {}
-        label = label_entry.get("primary", "") if isinstance(label_entry, dict) else ""
-        llm_all = label_entry.get("all", "") if isinstance(label_entry, dict) else ""
+    def node_label(node_id: int, row) -> tuple[str, int | None, str]:
+        llm_all = ""
+        if label_source == "llm":
+            label_entry = hier_labels.get(node_id) or {}
+            label = label_entry.get("primary", "") if isinstance(label_entry, dict) else ""
+            llm_all = label_entry.get("all", "") if isinstance(label_entry, dict) else ""
+        else:
+            label = row.get("Parent_Name", f"Parent {node_id}") if row is not None else f"Parent {node_id}"
         count = None
         if label:
-            row = parent_rows.get(node_id)
             topics_list = parse_topics_list(row.get("Topics", "")) if row is not None else []
             if topics_list:
                 count = sum(topic_counts.get(t, 0) for t in topics_list)
@@ -156,7 +182,7 @@ def build_tree(
     def leaf_label(node_id: int) -> tuple[str, int | None, str]:
         label = topic_labels.get(node_id, f"Topic {node_id}")
         count = topic_counts.get(node_id)
-        llm_all = topic_llm_labels.get(node_id, "")
+        llm_all = topic_llm_labels.get(node_id, "") if label_source == "llm" else ""
         return clip(label), count, llm_all
 
     def build_node(node_id: int) -> dict:
@@ -164,9 +190,7 @@ def build_tree(
             row = parent_rows[node_id]
             left_id = int(row["Child_Left_ID"])
             right_id = int(row["Child_Right_ID"])
-            label, count, llm_all = node_label(node_id)
-            if not label:
-                label = row.get("Parent_Name", f"Parent {node_id}")
+            label, count, llm_all = node_label(node_id, row)
             name = label
             if count is not None:
                 name = f"{name} (n={count})"
@@ -438,9 +462,19 @@ function wrap(text, width) {
     )
 
 
+def output_name_for(base_name: str, source: str) -> str:
+    if source == "both":
+        source = "llm"
+    if base_name.lower().endswith(".html"):
+        stem = base_name[:-5]
+        return f"{stem}_{source}.html"
+    return f"{base_name}_{source}.html"
+
+
 def main():
     args = parse_args()
     clusters = [c.strip() for c in args.clusters.split(",") if c.strip()]
+    sources = ["llm", "raw"] if args.label_source == "both" else [args.label_source]
 
     for cluster in clusters:
         cluster_dir = Path(args.output_base_dir) / f"cluster_{cluster}"
@@ -450,32 +484,37 @@ def main():
             continue
 
         hier_df = pd.read_csv(hier_path)
-        topic_labels, topic_counts, topic_llm_labels = load_topic_labels(cluster_dir)
-        hier_labels = load_hier_labels(cluster_dir)
+        for source in sources:
+            topic_labels, topic_counts, topic_llm_labels = load_topic_labels(cluster_dir, source)
+            hier_labels = load_hier_labels(cluster_dir, source)
 
-        wrap_chars = max(10, int(args.wrap_width // 7)) if args.wrap_width else 40
-        tree_data = build_tree(
-            hier_df,
-            topic_labels,
-            topic_counts,
-            hier_labels,
-            max_label_length=args.max_label_length,
-            wrap_chars=wrap_chars,
-            topic_llm_labels=topic_llm_labels,
-        )
-        html = render_html(
-            tree_data,
-            collapsed_depth=args.collapsed_depth,
-            dx=args.node_gap_x,
-            dy=args.node_gap_y,
-            width=args.width,
-            wrap_width=args.wrap_width,
-            line_height=args.line_height,
-        )
+            wrap_chars = max(10, int(args.wrap_width // 7)) if args.wrap_width else 40
+            tree_data = build_tree(
+                hier_df,
+                topic_labels,
+                topic_counts,
+                hier_labels,
+                max_label_length=args.max_label_length,
+                wrap_chars=wrap_chars,
+                topic_llm_labels=topic_llm_labels,
+                label_source=source,
+            )
+            html = render_html(
+                tree_data,
+                collapsed_depth=args.collapsed_depth,
+                dx=args.node_gap_x,
+                dy=args.node_gap_y,
+                width=args.width,
+                wrap_width=args.wrap_width,
+                line_height=args.line_height,
+            )
 
-        out_path = cluster_dir / args.output_name
-        out_path.write_text(html, encoding="utf-8")
-        print(f"[{cluster}] Wrote {out_path}")
+            out_name = args.output_name if source == args.label_source else output_name_for(args.output_name, source)
+            if args.label_source == "both":
+                out_name = output_name_for(args.output_name, source)
+            out_path = cluster_dir / out_name
+            out_path.write_text(html, encoding="utf-8")
+            print(f"[{cluster}] Wrote {out_path}")
 
 
 if __name__ == "__main__":

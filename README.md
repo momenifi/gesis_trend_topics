@@ -38,13 +38,25 @@ To label hierarchical topics (using abstracts + keywords from the merged subtopi
 python label_hierarchical_topics_with_llm.py --clusters ALL,CS,SS,BIO,OTHER --use-openwebui
 ```
 
-To visualize hierarchical LLM labels as a collapsible tree (plus/minus):
+To visualize hierarchical labels as a collapsible tree (plus/minus):
 
 ```bash
 python visualize_hierarchy_tree.py --clusters ALL,CS,SS,BIO,OTHER
 ```
 
 In the tree, the primary label is shown and additional LLM labels appear on hover.
+
+To show raw/BERTopic labels instead of LLM labels:
+
+```bash
+python visualize_hierarchy_tree.py --clusters ALL,CS,SS,BIO,OTHER --label-source raw
+```
+
+To generate both versions in one run (outputs `*_llm.html` and `*_raw.html`):
+
+```bash
+python visualize_hierarchy_tree.py --clusters ALL,CS,SS,BIO,OTHER --label-source both
+```
 
 ## Report
 
