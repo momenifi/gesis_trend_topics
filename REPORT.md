@@ -103,6 +103,7 @@ For each discipline cluster (e.g., `outputs_by_cluster/cluster_SS/`):
 - `topics_over_time_labeled.csv` is the same as above, but with LLM labels added.
 - `publications_with_topics.csv` and `publications_with_topics.xlsx` list each publication with its assigned topic, label, and probability score.
 - In these publication files, `topic_label` comes from BERTopic’s automatic labels (not the LLM).
+- If `topic_info_labeled.csv` is present, these files also include `llm_label` and `llm_labels` columns.
 - `docs_with_topics_and_macro_topics.csv` is the full document export with topic and macro-topic assignments.
 - `hierarchical_topics_raw.csv` contains the hierarchy tree used for the topic dendrogram.
 - `hierarchical_topics_labeled.csv` adds LLM labels for each hierarchy node (`LLM_Label`, `LLM_Labels`).

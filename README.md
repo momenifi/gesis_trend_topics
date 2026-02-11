@@ -58,6 +58,8 @@ To generate both versions in one run (outputs `*_llm.html` and `*_raw.html`):
 python visualize_hierarchy_tree.py --clusters ALL,CS,SS,BIO,OTHER --label-source both
 ```
 
+If `topic_info_labeled.csv` is present, `publications_with_topics.csv` also includes `llm_label` and `llm_labels`.
+
 ## Report
 
 A non-technical summary of the topic modeling and LLM labeling process is available in `REPORT.md`.

@@ -528,8 +528,34 @@ def run_bertopic_for_cluster(df_cluster: pd.DataFrame, cluster_label: str):
         "middle_group", "cluster", "topic", "topic_label", "topic_prob",
     ]
     export_cols = [c for c in cols if c in df.columns]
-    df[export_cols].to_csv(out_dir / "publications_with_topics.csv", index=False)
-    df[export_cols].to_excel(out_dir / "publications_with_topics.xlsx", index=False)
+    df_pub = df[export_cols].copy()
+
+    # Optional: LLM-Labels anhängen, falls vorhanden
+    llm_label_map = {}
+    llm_labels_map = {}
+    labeled_path = out_dir / "topic_info_labeled.csv"
+    if labeled_path.exists():
+        try:
+            df_labeled = pd.read_csv(labeled_path)
+            if "Topic" in df_labeled.columns:
+                if "LLM_Label" in df_labeled.columns:
+                    llm_label_map = dict(zip(df_labeled["Topic"], df_labeled["LLM_Label"]))
+                if "LLM_Labels" in df_labeled.columns:
+                    llm_labels_map = dict(zip(df_labeled["Topic"], df_labeled["LLM_Labels"]))
+        except Exception as e:
+            print(f"[{cluster_label}] Hinweis: Konnte LLM-Labels nicht laden: {e}")
+
+    if llm_label_map:
+        df_pub["llm_label"] = df_pub["topic"].map(llm_label_map).fillna("")
+    else:
+        df_pub["llm_label"] = ""
+    if llm_labels_map:
+        df_pub["llm_labels"] = df_pub["topic"].map(llm_labels_map).fillna("")
+    else:
+        df_pub["llm_labels"] = ""
+
+    df_pub.to_csv(out_dir / "publications_with_topics.csv", index=False)
+    df_pub.to_excel(out_dir / "publications_with_topics.xlsx", index=False)
     print(f"[{cluster_label}] Fertig. Ergebnisse in {out_dir.resolve()}")
 
 
